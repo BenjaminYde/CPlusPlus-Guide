@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Containers/Container adaptors.md",
+                "file": "Design Patterns/sortspec.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Containers/Container adaptors.md",
+                "file": "Design Patterns/sortspec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Containers/Container adaptors.md",
+                "file": "Design Patterns/sortspec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Containers/Container adaptors.md"
+                "file": "Design Patterns/sortspec.md"
               }
             }
           }
@@ -183,12 +183,29 @@
   },
   "active": "ba400728387aae1f",
   "lastOpenFiles": [
-    "Containers/Views.md",
+    "Multithreading/sortspec.md",
+    "sortspec.md",
+    "Project/Testing.md",
+    "Design Patterns/sortspec.md",
+    "Design Patterns",
+    "Project/Debugging.md",
+    "Project/Compilers.md",
+    "Multithreading",
+    "Error Handling (copy)/sortspec.md",
+    "Error Handling (copy)",
+    "Error Handling/sortspec.md",
+    "Error Handling",
+    "Templates (copy)/sortspec.md",
+    "Templates (copy)",
+    "Templates/sortspec.md",
+    "Templates/sortspec.md",
+    "Functions/sortspec.md",
+    "Templates",
     "Containers/Container adaptors.md",
+    "Containers/Views.md",
     "Memory Management/Smart pointers in functions.md",
     "Functions/Function pointers.md",
     "Functions/Lambdas.md",
-    "sortspec.md",
     "OOP/Object relationships.md",
     "Memory Management/sortspec.md",
     "C++/Strings/String streams.md",
@@ -198,30 +215,13 @@
     "C++/Strings/std string.md",
     "C++/Strings/C-Style strings.md",
     "C++/Strings/IO Streams.md",
-    "C++/Strings/String literals.md",
-    "C++/Strings/File streams.md",
-    "C++/Strings/sortspec.md",
-    "C++/Containers/Views.md",
-    "C++/Containers/Unordered associative containers/std unordered_multimap.md",
-    "C++/Containers/Unordered associative containers/std unordered_map.md",
-    "C++/Containers/Unordered associative containers/std unordered_set.md",
-    "C++/Containers/Container adaptors.md",
-    "C++/Strings/File IO.md",
-    "C++/Strings/printf.md",
-    "C++/Project/Compilers.md",
     "C++/Project/CMake",
     "C++/Containers/Unordered associative containers",
     "C++/Containers/Associative containers",
     "Ass",
-    "C++/Containers",
-    "C++/Project/_Img",
     "C++/Project/_Img/Pasted image 20230904201717.png",
-    "C++/Project",
     "C++/Strings/_Img/Pasted image 20230903190613.png",
-    "C++/Strings/_Img",
     "C++/Strings/_Img/Pasted image 20230903190532.png",
-    "C++/Strings",
-    "C++/OOP/Virtual functions",
     "C++/OOP/Inheritance/_Img/Pasted image 20230827214903.png",
     "C++/OOP/Inheritance/_Img/Pasted image 20230827214855.png",
     "C++/OOP/Inheritance/_Img/Pasted image 20230827214914.png",

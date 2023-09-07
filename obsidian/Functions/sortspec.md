@@ -1,5 +1,5 @@
 ---
-sorting-spec: |
+sorting-spec: |-
   sortspec
   Function pointers
 ---

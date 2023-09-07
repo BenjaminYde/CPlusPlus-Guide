@@ -7,5 +7,9 @@ sorting-spec: |-
   Memory Management
   Functions
   Typing
+  Error Handling
+  Templates
   Project
+  Multithreading
+  Design Patterns
 ---
