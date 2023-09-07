@@ -1,0 +1,11 @@
+{
+  "accentColor": "#db7929",
+  "baseFontSize": 16,
+  "theme": "obsidian",
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "PageWidth"
+  ]
+}

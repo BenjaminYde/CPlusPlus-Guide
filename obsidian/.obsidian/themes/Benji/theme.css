@@ -1,0 +1,143 @@
+     /* This Theme is called "Wasp" and Obsidian Theme created by Santi Younger */
+
+     /* Last Update:
+2021-07-27 14:48
+     */
+
+     :root {
+         --font-monospace: "Source Code Pro", monospace;
+     }
+
+     .theme-dark {
+         --background-primary: #242424;
+         --background-primary-alt: #242424;
+         --background-secondary: #191919;
+         --background-secondary-alt: #3D3D3D;
+         --text-normal: #ffffff;
+         --text-faint: #bdae93;
+         --text-title-h1: #ffbc86;
+         --text-title-h2: #ffbc86;
+         --text-title-h3: #E0E0E0;
+         --text-title-h4: #E0E0E0;
+         --text-title-h5: #E0E0E0;
+         --text-title-h6: #E0E0E0;
+         --text-highlight-bg: #640211;
+         --text-link: #83a598;
+         --text-a-hover: #83a598;
+         --text-accent-hover: #D49335;
+         --code-normal: #ffbc86;
+         --bold-color: #ffbc86;
+     }
+
+     .theme-dark .cm-s-obsidian span.obsidian-search-match-highlight {
+         color: var(--text-normal);
+         background-color: #483699;
+     }
+
+     .nav-file-title,
+     .nav-folder-title {
+         color: var(--text-normal);
+     }
+
+     .code {
+        color: red;
+      }
+
+     .nav-file-title.is-active,
+     .nav-folder-title.is-active,
+     body:not(.is-grabbing) .nav-file-title:hover,
+     body:not(.is-grabbing) .nav-folder-title:hover {
+         background-color: var(--background-modifier-border);
+         color: white;
+     }
+
+     .cm-s-obsidian span.cm-formatting-link {
+         color: var(--text-normal);
+     }
+
+     .CodeMirror-guttermarker-subtle {
+         color: var(--text-normal) !important;
+     }
+
+     button.mod-cta {
+         background-color: var(--interactive-accent);
+         color: var(--text-normal);
+     }
+
+     .vertical-tab-header-group-title {
+         color: var(--text-white);
+     }
+
+     .cm-header-1 {
+         font-size: 18px;
+         color: var(--text-title-h1) !important;
+     }
+
+     .cm-header-2 {
+         font-size: 18px;
+         color: var(--text-title-h2) !important;
+     }
+
+     .cm-header-3 {
+         font-size: 18px;
+         color: var(--text-title-h3) !important;
+     }
+
+     .cm-header-4 {
+         font-size: 18px;
+         color: var(--text-title-h4) !important;
+     }
+
+     .cm-header-5 {
+         font-size: 18px;
+         color: var(--text-title-h5) !important;
+     }
+
+     .cm-header-6 {
+         font-size: 18px;
+         color: --text-normal;
+         color: var(--text-title-h6) !important;
+     }
+
+     .markdown-preview-view h1 {
+         font-size: 20px;
+         line-height: 24px;
+         color: var(--text-title-h1) !important;
+     }
+
+     .markdown-preview-view h2 {
+         font-size: 20px;
+         line-height: 24px;
+         color: var(--text-title-h2) !important;
+     }
+
+     .markdown-preview-view h3 {
+         font-size: 20px;
+         line-height: 24px;
+         color: var(--text-title-h3) !important;
+     }
+
+     .markdown-preview-view h4 {
+         font-size: 20px;
+         line-height: 24px;
+         color: var(--text-title-h4) !important;
+     }
+
+     .markdown-preview-view h5 {
+         font-size: 20px;
+         line-height: 24px;
+         color: var(--text-title-h5) !important;
+     }
+
+     .markdown-preview-view h6 {
+         font-size: 20px;
+         line-height: 24px;
+         color: --text-normal;
+         color: var(--text-title-h6) !important;
+     }
+
+     .markdown-preview-view .code {
+        color: red;
+    }
+
+
