@@ -124,3 +124,40 @@ Thread management—comprising thread creation, termination, and context switchi
 #### Enhanced Scalability
 
 Multi-threaded applications can more readily take advantage of systems with multiple processors or cores. By spreading tasks across available processors, multi-threading can significantly boost the application's throughput. This makes it highly scalable and well-suited for scenarios ranging from single-user desktop applications to large-scale server applications.
+
+## Thread Safety / Resources Synchronization
+
+### The Race Condition 
+
+Threads within the same process can access common resources like data and code. However, this can lead to issues if multiple threads try to modify the same data simultaneously. This situation, known as a "**race condition**", creates uncertainty about which thread will get to modify the data first.
+
+The part of the code where this can happen is called a "**critical section**." In these sections, even a single line of code can become multiple lines when compiled, making it non-atomic, or indivisible. This means that the outcome can change based on the order in which threads run this code.
+
+To prevent these issues, you can use "**thread synchronization**" techniques. These ensure that only one thread can access the critical section at a time, blocking others until it's done. Common methods for achieving this include using semaphores, monitors, and locks.
+
+#### Example: 
+
+Two threads (Thread 1 and Thread 2) run in parallel, both trying to access and modify the shared value x. If Thread 2 tries to read from the same memory location while Thread 1 writes back an updated value, the value of x changes. This result is data corruption or race condition.
+
+![[Pasted image 20231002223808.png]]
+### Deadlocks
+
+When a program has both changeable data (mutable state) and runs tasks in parallel, it's a recipe for trouble. In traditional programming approaches, one way to safeguard the mutable data is to use locks, allowing only one thread to access the data at any given time. This is known as "mutual exclusion," because when one thread is accessing a particular piece of data, all other threads are excluded from doing so.
+
+Timing is crucial here. For mutual exclusion to be beneficial, multiple threads should ideally need to access the same data simultaneously. While using locks can prevent data corruption, it also creates new challenges, such as the risk of deadlock. In a deadlock situation, two or more threads each wait for the other to release a lock, leading to a standstill where nothing can proceed.
+
+#### Example
+
+1. Thread 1 acquires lock B 
+2. Thread 2 acquires lock A 
+3. Thread 1 tries acquiring lock A 
+   (failed because not released by thread 2) 
+4. Thread 2 tries acquiring lock B 
+   (failed because not released by thread 2) 
+5. This is a case of deadlock.
+
+![[Pasted image 20231002223842.png]]
+
+When multiple threads need to access and modify shared data, performance can take a hit due to the need for synchronization. Mutual exclusion locks, or **mutexes**, are often used to ensure that only one thread at a time can access certain parts of the code. While these locks can prevent data corruption, they come with a downside: they slow everything down.
+
+Each time a thread acquires or releases a lock, it incurs a performance cost. As the number of processor cores increases, this cost can escalate, because more threads might be waiting for the same lock. Additionally, as you add more tasks that need to access the same shared data, the overhead from using locks becomes a bigger issue, negatively affecting overall performance.
