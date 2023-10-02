@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Multithreading/POSIX vs STL Threads.md",
+                "file": "Multithreading/STL Threads/thread.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Multithreading/POSIX vs STL Threads.md",
+                "file": "Multithreading/STL Threads/thread.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Multithreading/POSIX vs STL Threads.md",
+                "file": "Multithreading/STL Threads/thread.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Multithreading/POSIX vs STL Threads.md"
+                "file": "Multithreading/STL Threads/thread.md"
               }
             }
           },
@@ -168,8 +168,10 @@
   },
   "active": "8ac6360be5a1330c",
   "lastOpenFiles": [
-    "Multithreading/sortspec.md",
+    "Multithreading/STL Threads",
     "Multithreading/POSIX vs STL Threads.md",
+    "Multithreading/STL Threads/thread.md",
+    "Multithreading/sortspec.md",
     "Functions/sortspec.md",
     "Functions/Function pointers.md",
     "Multithreading/Introduction to concurrency.md",
@@ -198,8 +200,6 @@
     "Memory Management/References.md",
     "Memory Management/Smart Pointers.md",
     "Memory Management/Using shared_ptr.md",
-    "Memory Management/Using weak_ptr.md",
-    "Design Patterns/sortspec.md",
     "Design Patterns",
     "Multithreading",
     "Error Handling (copy)",
