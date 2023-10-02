@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Strings/std format.md",
+                "file": "Multithreading/Introduction to concurrency.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Strings/std format.md",
+                "file": "Multithreading/Introduction to concurrency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Strings/std format.md",
+                "file": "Multithreading/Introduction to concurrency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Strings/std format.md"
+                "file": "Multithreading/Introduction to concurrency.md"
               }
             }
           },
@@ -168,9 +168,14 @@
   },
   "active": "8ac6360be5a1330c",
   "lastOpenFiles": [
-    "Strings/printf.md",
-    "Strings/std format.md",
+    "Multithreading/_image/Pasted image 20231002221000.png",
+    "Multithreading/Introduction to concurrency.md",
+    "Multithreading/_image/Pasted image 20231002215438.png",
     "Multithreading/sortspec.md",
+    "Multithreading/_image/Pasted image 20231002214859.png",
+    "Multithreading/_image",
+    "Strings/std format.md",
+    "Strings/printf.md",
     "Functions/Function pointers.md",
     "Memory Management/Using unique_ptr.md",
     "Memory Management/Pointers.md",
@@ -194,16 +199,13 @@
     "sortspec.md",
     "Design Patterns",
     "Multithreading",
-    "Error Handling (copy)/sortspec.md",
     "Error Handling (copy)",
-    "Error Handling/sortspec.md",
     "Error Handling",
     "Templates (copy)",
     "Templates",
     "C++/Project/CMake",
     "C++/Containers/Unordered associative containers",
     "C++/Containers/Associative containers",
-    "Ass",
     "C++/Project/_Img/Pasted image 20230904201717.png",
     "C++/Strings/_Img/Pasted image 20230903190613.png",
     "C++/Strings/_Img/Pasted image 20230903190532.png",
@@ -211,9 +213,6 @@
     "C++/OOP/Inheritance/_Img/Pasted image 20230827214855.png",
     "C++/OOP/Inheritance/_Img/Pasted image 20230827214914.png",
     "C++/Memory Management/_Img/StackVsHeap_02.png",
-    "C++/Memory Management/_Img/StackVsHeap_01.png",
-    "Github Actions/Images/Pasted image 20230220233257.png",
-    "Vulkan/_Img/Pasted image 20230418222142.png",
     "Untitled.canvas"
   ]
 }
