@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Multithreading/STL Threads/thread.md",
+                "file": "Multithreading/STL Threads/async and future.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Multithreading/STL Threads/thread.md",
+                "file": "Multithreading/STL Threads/async and future.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Multithreading/STL Threads/thread.md",
+                "file": "Multithreading/STL Threads/async and future.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Multithreading/STL Threads/thread.md"
+                "file": "Multithreading/STL Threads/async and future.md"
               }
             }
           },
@@ -168,13 +168,15 @@
   },
   "active": "8ac6360be5a1330c",
   "lastOpenFiles": [
-    "Multithreading/STL Threads",
-    "Multithreading/POSIX vs STL Threads.md",
     "Multithreading/STL Threads/thread.md",
+    "Multithreading/STL Threads/async and future.md",
+    "Multithreading/STL Threads/sortspec.md",
+    "Multithreading/POSIX vs STL Threads.md",
+    "Multithreading/Introduction to concurrency.md",
+    "Multithreading/STL Threads",
     "Multithreading/sortspec.md",
     "Functions/sortspec.md",
     "Functions/Function pointers.md",
-    "Multithreading/Introduction to concurrency.md",
     "Multithreading/_image/Pasted image 20231002223842.png",
     "Multithreading/_image/Pasted image 20231002223808.png",
     "Multithreading/_image/Pasted image 20231002221000.png",
@@ -199,7 +201,6 @@
     "Templates/sortspec.md",
     "Memory Management/References.md",
     "Memory Management/Smart Pointers.md",
-    "Memory Management/Using shared_ptr.md",
     "Design Patterns",
     "Multithreading",
     "Error Handling (copy)",
@@ -208,7 +209,6 @@
     "Templates",
     "C++/Project/CMake",
     "C++/Containers/Unordered associative containers",
-    "C++/Containers/Associative containers",
     "C++/Project/_Img/Pasted image 20230904201717.png",
     "C++/Strings/_Img/Pasted image 20230903190613.png",
     "C++/Strings/_Img/Pasted image 20230903190532.png",

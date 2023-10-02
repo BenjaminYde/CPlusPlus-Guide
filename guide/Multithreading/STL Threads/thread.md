@@ -62,6 +62,23 @@ std::thread t1(my_function, arg1, arg2);
 
 - `get_id()`: Returns the ID of the thread.
 
+```c++
+#include <iostream>
+#include <thread>
+
+void my_function() {
+    std::cout << "Thread ID: " << std::this_thread::get_id() << std::endl;
+}
+
+int main() {
+    std::thread t1(my_function);
+    std::cout << "Thread t1 ID: " << t1.get_id() << std::endl;
+
+    t1.join();
+    return 0;
+}
+```
+
 ### Example
 
 Here's a simple example to demonstrate some of these aspects:
