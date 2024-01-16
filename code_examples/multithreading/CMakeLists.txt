@@ -1,3 +1,3 @@
-add_subdirectory(01_sync)
-add_subdirectory(02_async)
-add_subdirectory(03_async_cout_mutex)
+# create target
+set(TARGET multithreading)
+add_executable(${TARGET} main.cpp)

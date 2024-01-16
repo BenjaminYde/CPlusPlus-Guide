@@ -1,8 +1,11 @@
 # Welcome to the C++ Guide 📚
 
-This repository is a C++ guide designed to be opened in Obsidian. It contains extensive documentation, code examples, and best practices to help you become a proficient C++ programmer.
+This repository is a C++ guide designed which is designed to be easily opened using VS Code or Github. It contains extensive documentation, code examples, and best practices to help you become a proficient C++ programmer. 
+The guide intends to be **to the point** so you can continue what really matters, programming.
 
-Download Obsidian on the following link: https://obsidian.md/
+# Execute Code Examples 🚀
+
+Explore the `examples` directory for **interactive C++** code examples, easily executable inside a **Docker DevContainer** within **Visual Studio Code**. This setup ensures a consistent and streamlined coding environment, ideal for learning and experimentation.
 
 ## References
 

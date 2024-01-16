@@ -1,9 +1,0 @@
-.markdown-preview-view {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.titlebar {
-    background-color: var(--background-secondary);
-    border-bottom: 1px solid var(--background-primary);
-  }
