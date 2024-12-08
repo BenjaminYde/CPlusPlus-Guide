@@ -1,4 +1,0 @@
-- [introduction](introduction.md)
-- [friend_vs_member_vs_normal_function_overloading](friend_vs_member_vs_normal_function_overloading.md)
-- [in_and_out_operators](in_and_out_operators.md)
-- [assignment_operator](assignment_operator.md)

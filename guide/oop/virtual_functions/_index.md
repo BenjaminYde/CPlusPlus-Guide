@@ -1,7 +1,0 @@
-- [virtual_functions](virtual_functions.md)
-- [override_and_final_specifier](override_and_final_specifier.md)
-- [covariant_return_types](covariant_return_types.md)
-- [destructors](destructors.md)
-- [pure_virtual](pure_virtual.md)
-- [multiple_inheritance](multiple_inheritance.md)
-- [object_slicing](object_slicing.md)

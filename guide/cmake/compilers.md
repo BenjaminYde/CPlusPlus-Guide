@@ -1,6 +1,7 @@
 ### GCC
 
 The GNU Compiler Collection (GCC) is more than just a compiler; it's a suite of compilers developed by the GNU Project. It has been instrumental in the open-source movement and remains the standard compiler for GNU and Linux-based projects. GCC supports an extensive range of programming languages including C, C++, Fortran, Go, and many others. It can target a wide array of hardware architectures and operating systems, making it incredibly versatile. In addition, GCC offers various optimization features and debugging tools, making it a comprehensive solution for developers.
+
 ### G++
 
 GCC has evolved from a single language "GNU C Compiler" to be a multi-language "GNU Compiler Collection". The term GCC may still sometimes refer to the "GNU C Compiler" in the context of C programming. However, G++ is the C++ compiler for the GNU Compiler Collection. 

@@ -1,5 +1,0 @@
-- [introduction](introduction.md)
-- [order_of_construction](order_of_construction.md)
-- [access_specifiers](access_specifiers.md)
-- [functions_and_overriding_behavior](functions_and_overriding_behavior.md)
-- [hiding_functionality](hiding_functionality.md)
