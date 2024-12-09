@@ -67,7 +67,7 @@ Want to see what topics are in todo? See the **index per category**.
 - [Constructors](./guide/oop/constructors.md)
 - [Destructors](./guide/oop/destructors.md)
 - [H and CPP Files](./guide/oop/h_and_cpp_files.md)
-- [Static]./guide/oop/static.md)
+- [Static]()./guide/oop/static.md)
 - [Friend](./guide/oop/friend.md)
 - [Nesting Classes](./guide/oop/nesting_classes.md)
 - [Operator Overloading](./guide/oop/operator_overloading/_index.md)
