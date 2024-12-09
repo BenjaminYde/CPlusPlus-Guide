@@ -124,6 +124,12 @@ Want to see what topics are in todo? See the **index per category**.
 - [Using constexpr](./guide/typing/using_constexpr.md)
 - [Using constval](./guide/typing/using_constval.md)
 
+## Design Patterns & Idioms
+
+- Idioms
+  - [RAII](./guide/design_patterns/raii.md)
+  - [PIMPL](./guide/design_patterns/pimpl.md)
+
 ## Todo
 
 - Design patterns
