@@ -48,17 +48,6 @@ RUN apt update && \
     rm cmake-${CMAKE_VERSION}-linux-x86_64.tar.gz
 ENV PATH="/opt/cmake/bin:${PATH}"
 
-# Install VCPKG
-#RUN apt update && \
-#    cd /tmp && \
-#    wget --no-check-certificate https://github.com/microsoft/vcpkg/archive/refs/tags/2023.02.24.tar.gz && \
-#    tar -xzvf 2023.02.24.tar.gz && \
-#    mv vcpkg-2023.02.24 /opt/vcpkg && \
-#    rm 2023.02.24.tar.gz && \
-#    cd /opt/vcpkg && \
-#    ./bootstrap-vcpkg.sh
-#ENV PATH="/opt/vcpkg:${PATH}"
-
 # Download and install Clang binaries
 ENV CLANG_VERSION 19.1.5
 RUN cd /tmp && \
@@ -71,6 +60,17 @@ RUN cd /tmp && \
     mkdir /opt/LLVM-${CLANG_VERSION} && \
     mv LLVM-${CLANG_VERSION}-Linux-X64/* /opt/LLVM-${CLANG_VERSION}
 ENV PATH="/opt/LLVM-${CLANG_VERSION}/bin:${PATH}"
+
+# Install VCPKG
+#RUN apt update && \
+#    cd /tmp && \
+#    wget --no-check-certificate https://github.com/microsoft/vcpkg/archive/refs/tags/2023.02.24.tar.gz && \
+#    tar -xzvf 2023.02.24.tar.gz && \
+#    mv vcpkg-2023.02.24 /opt/vcpkg && \
+#    rm 2023.02.24.tar.gz && \
+#    cd /opt/vcpkg && \
+#    ./bootstrap-vcpkg.sh
+#ENV PATH="/opt/vcpkg:${PATH}"
 
 # Create User
 RUN deluser --remove-home ubuntu && \
@@ -96,5 +96,3 @@ RUN sudo apt update && sudo apt -qq install -y --no-install-recommends \
     echo "source /home/developer/.oh-my-zsh/oh-my-zsh.sh" >> .zshrc
 
 ENTRYPOINT ["/usr/bin/zsh"]
-
-WORKDIR /home/benjaminyde

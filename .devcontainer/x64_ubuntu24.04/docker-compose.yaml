@@ -4,7 +4,7 @@ services:
     tty: true        # docker run -t
     build:
       context: ../..
-      dockerfile: .devcontainer/amd64_ubuntu_24.04/Dockerfile
+      dockerfile: .devcontainer/x64_ubuntu24.04/Dockerfile
     user: developer
     volumes:
       # workspace
