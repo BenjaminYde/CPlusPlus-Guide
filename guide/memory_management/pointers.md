@@ -8,9 +8,9 @@ The stack is used for static memory allocation and contains local variables and 
 
 The heap is used for dynamic memory allocation, and allows you to allocate memory explicitly during runtime. Unlike the stack, the heap does not automatically deallocate memory—you have to do it manually. If you forget to deallocate memory when you're done with it, it can lead to memory leaks. The heap is larger than the stack, but allocating and deallocating memory on the heap is slower than on the stack.
 
-![[StackVsHeap_01.png]]
+![Img](./static/stack_vs_heap_1.png)
+![Img](./static/stack_vs_heap_2.png)
 
-![[StackVsHeap_02.png]]
 ## Why and when to use pointers?
 
 - **Dynamic Memory Allocation**: When the amount of memory needed is not known at compile time, or the data is too large to fit on the stack, you can allocate memory dynamically on the heap using pointers. This is done with the `new` keyword in C++, which returns a pointer to the allocated memory.

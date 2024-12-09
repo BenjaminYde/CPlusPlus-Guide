@@ -27,7 +27,7 @@ Reactive programming is closely related to asynchronous programming but is built
 
 The `lscpu` command provides information about the CPU architecture. The output lists various details, including the number of CPUs, threads per core, cores per socket, and so on.
 
-![[Pasted image 20231002214859.png]]
+![Img](./static/lscpu.png)
 
 The output information describes the CPU architecture of the machine:
 
@@ -37,7 +37,7 @@ The output information describes the CPU architecture of the machine:
 
 - **Thread(s) per core: 2**: This means that each physical core has two threads. This is generally indicative of a feature known as Hyper-Threading (or Simultaneous Multi-Threading, SMT, in some AMD processors). Hyper-Threading allows each physical core to work on two tasks simultaneously, effectively doubling the number of logical cores.
 
-![[Pasted image 20231002215438.png]]
+![Img](./static/cores.png)
 
 ## Threads
 
@@ -105,22 +105,26 @@ Although saving and restoring the PCB involves some overhead, modern systems are
 
 - **Parallel Processing**: Focuses on splitting tasks to be run simultaneously across multiple CPU cores for faster completion. It's like having multiple chefs, each assigned to a specific task, all cooking at the same time to prepare a large feast more quickly.
 
-![[Pasted image 20231002221000.png]]
+![Img](./static/sequential_vs_parallel.png)
 
 ## Why multi-threading?
 
 #### Improved Responsiveness
 
 In applications that require constant user interaction, multi-threading can improve responsiveness. For example, in a graphical user interface (GUI), one thread (commonly known as the UI thread) can be dedicated to listening for user inputs, while another thread performs more time-consuming tasks in the background. This ensures that the application remains responsive to the user at all times.
+
 #### Efficient CPU Utilization
 
 Multi-threading can also make better use of the CPU by ensuring that it's almost always working on some task. When one thread encounters an I/O-bound operation that doesn't require CPU cycles, the CPU can shift its focus to another thread that does require computation. This minimizes CPU idle time and maximizes utilization.
+
 #### Seamless Resource Sharing
 
 Threads within the same process can share resources like code segments, data, and files more easily because they operate in the same memory space. This makes inter-thread communication more straightforward and faster compared to inter-process communication, which often involves more complex mechanisms like message passing or shared memory spaces.
+
 #### Lower Overhead Costs
 
 Thread management—comprising thread creation, termination, and context switching—is generally more resource-efficient than process management. This is because threads within the same process share resources, reducing the overhead associated with these operations.
+
 #### Enhanced Scalability
 
 Multi-threaded applications can more readily take advantage of systems with multiple processors or cores. By spreading tasks across available processors, multi-threading can significantly boost the application's throughput. This makes it highly scalable and well-suited for scenarios ranging from single-user desktop applications to large-scale server applications.
@@ -139,7 +143,8 @@ To prevent these issues, you can use "**thread synchronization**" techniques. Th
 
 Two threads (Thread 1 and Thread 2) run in parallel, both trying to access and modify the shared value x. If Thread 2 tries to read from the same memory location while Thread 1 writes back an updated value, the value of x changes. This result is data corruption or race condition.
 
-![[Pasted image 20231002223808.png]]
+![Img](./static/race_condition.png)
+
 ### Deadlocks
 
 When a program has both changeable data (mutable state) and runs tasks in parallel, it's a recipe for trouble. In traditional programming approaches, one way to safeguard the mutable data is to use locks, allowing only one thread to access the data at any given time. This is known as "mutual exclusion," because when one thread is accessing a particular piece of data, all other threads are excluded from doing so.
@@ -156,7 +161,7 @@ Timing is crucial here. For mutual exclusion to be beneficial, multiple threads 
    (failed because not released by thread 2) 
 5. This is a case of deadlock.
 
-![[Pasted image 20231002223842.png]]
+![Img](./static/deadlocks.png)
 
 When multiple threads need to access and modify shared data, performance can take a hit due to the need for synchronization. Mutual exclusion locks, or **mutexes**, are often used to ensure that only one thread at a time can access certain parts of the code. While these locks can prevent data corruption, they come with a downside: they slow everything down.
 

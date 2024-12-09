@@ -1,8 +1,10 @@
+# C-Style Strings
+
 In the C language, strings are represented as an array of characters. The last character of a string is a null character (`\0`) so that code operating on the string can determine where it ends. This null character is officially known as NUL, spelled with one L, not two.
 
 For example, the string "hello" appears to be five characters long, but six characters worth of space are needed in memory to store the value.
 
-![[Pasted image 20230903190613.png]]
+![Img](./static/c_style.png)
 
 They are a carryover from the C language and are supported in C++ for compatibility. 
 Even though C++ provides a better string abstraction, it is important to understand the C technique for strings because they still arise in C++ programming. One of the most common situations is where a C++ program has to call a C-based interface in some third-party library or as part of interfacing to the operating system.

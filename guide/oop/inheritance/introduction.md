@@ -8,11 +8,11 @@ Inheritance in C++ takes place between classes. In an inheritance (is-a) relatio
 
 In the diagram below, Fruit is the parent, and both Apple and Banana are children:
 
-![[Pasted image 20230827214855.png]]
+![Img](./static/intro_1.png)
 
 In this diagram, Triangle is both a child (to Shape) and a parent (to Right Triangle):
 
-![[Pasted image 20230827214903.png]]
+![Img](./static/intro_2.png)
 
 ## Access specifier
 
@@ -38,9 +38,10 @@ Inheritance can be of the following types based on the access specifier used:
 - **Private Inheritance**: 
 	- Both the public and protected members of the base class become private members of the derived class. 
 	- Private members of the base class are not accessible in the derived class.
+
 ## The person
 
-![[Pasted image 20230827214914.png]]
+![Img](./static/intro_3.png)
 
 ```c++
 #include <iostream>
