@@ -13,9 +13,11 @@ Explore the `examples` directory for **interactive C++** code examples, easily e
 There is **more content incoming** so the categories will **not be visible here** until it is completed.    
 Want to see what topics are in todo? See the **index per category**.
 
-## CMake
+## CMake & Tooling
 
-- [Compilers](/guide/cmake/compilers.md)
+- [Compilers Overview](./guide/cmake_and_tooling/compilers.md)
+- [Build Generators](./guide/cmake_and_tooling/build_generators.md)
+- [Tooling Overview](./guide/cmake_and_tooling/tooling.md)
 
 ## Containers
 
@@ -67,7 +69,7 @@ Want to see what topics are in todo? See the **index per category**.
 - [Constructors](./guide/oop/constructors.md)
 - [Destructors](./guide/oop/destructors.md)
 - [H and CPP Files](./guide/oop/h_and_cpp_files.md)
-- [Static]()./guide/oop/static.md)
+- [Static](./guide/oop/static.md)
 - [Friend](./guide/oop/friend.md)
 - [Nesting Classes](./guide/oop/nesting_classes.md)
 - [Operator Overloading](./guide/oop/operator_overloading/_index.md)
@@ -160,7 +162,11 @@ Want to see what topics are in todo? See the **index per category**.
   - Professional C++, 5th Edition raises the bar for advanced programming manuals. Complete with a comprehensive overview of the new capabilities of C++20, each feature of the newly updated programming language is explained in detail and with examples.
   - By Marc Gregoire, Februari 2021, 1312 pages
   - Link [here](https://www.amazon.com.be/-/en/Marc-Gregoire/dp/1119695406)
-- **Modern CMake for C++**
+- **Modern CMake for C++** (2nd edition)
   - Write comprehensive, professional-standard CMake projects and ensure the quality and simplicity of your solutions
-  - By Rafal Świdziński, Februari 2022, 460 pages
-  - Link [here](https://www.amazon.com.be/-/nl/Rafal-%C5%9Awidzi%C5%84ski/dp/1801070059)
+  - By Rafal Świdziński, May 2024, 502 pages
+  - Link [here](https://www.packtpub.com/en-be/product/modern-cmake-for-c-9781805123361)
+- **CMake Best Practices** (2nd edition)
+  - Write comprehensive, professional-standard CMake projects and ensure the quality and simplicity of your solutions
+  - By Dominik Berner & Mustafa Kemal Gilor, Aug 2024, 502 pages
+  - Link [here](https://www.packtpub.com/en-be/product/cmake-best-practices-9781835880654)
