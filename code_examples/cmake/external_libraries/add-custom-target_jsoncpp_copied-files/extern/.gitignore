@@ -1,0 +1,8 @@
+# installed packages
+install/
+
+# jsoncpp
+jsoncpp/build
+jsoncpp/src/external_jsoncpp-build
+jsoncpp/src/external_jsoncpp-stamp
+jsoncpp/tmp

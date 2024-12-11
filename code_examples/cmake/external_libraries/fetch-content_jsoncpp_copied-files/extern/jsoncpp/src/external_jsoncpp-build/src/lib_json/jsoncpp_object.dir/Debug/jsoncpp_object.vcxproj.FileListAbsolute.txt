@@ -1,0 +1,1 @@
+E:\Projects\CPlusPlus\LearningCMake\UsingPackages\02-ExternalAdd_Json_WithCopiedHeaderOnly\extern\jsoncpp\src\external_jsoncpp-build\src\lib_json\jsoncpp_object.dir\Debug\jsoncpp_object.lib
