@@ -25,7 +25,7 @@ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 
 ## Multi-Config Generators
 
-Multi-config generators, such as Visual Studio and Xcode, support multiple build configurations in a single build directory (e.g., Debug, Release, RelWithDebInfo). Specify the configuration during the build stage:
+Multi-config generators, such as Visual Studio and Xcode, support multiple build configurations in a single build directory (e.g., `Debug`, `Release`, `RelWithDebInfo`). Specify the configuration during the build stage:
 
 ```sh
 cmake --build build --config Debug

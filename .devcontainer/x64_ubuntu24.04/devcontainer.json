@@ -11,7 +11,8 @@
 				"ms-vscode.cmake-tools",
 				"mhutchie.git-graph",
 				"vadimcn.vscode-lldb",
-				"marlongerson.jetbrains-icons"
+				"marlongerson.jetbrains-icons",
+				"chrisdias.vscode-opennewinstance"
 			],
 			"settings": {
 				"terminal.integrated.defaultProfile.linux": "zsh",

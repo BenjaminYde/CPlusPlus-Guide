@@ -99,7 +99,7 @@ This is where CMake shines: it automates and abstracts this process, making buil
 
 ## What is CMake?
 
-CMake is a powerful, cross-platform build system generator designed to simplify complex build workflows for C++ projects. Unlike traditional build systems, CMake does not directly build code but generates platform-specific build scripts (e.g., Makefiles, Ninja files, Visual Studio solutions). Its flexibility and scalability make it the de facto standard for modern C++ development.
+CMake is a powerful, cross-platform build system (generator and builder) designed to simplify complex build workflows for C++ projects. Unlike traditional build systems, CMake does not directly build code but generates platform-specific build scripts (e.g., Makefiles, Ninja files, Visual Studio solutions). Its flexibility and scalability make it the de facto standard for modern C++ development.
 
 ### Key Features: 
 
@@ -165,7 +165,7 @@ Example:
 cmake --build build --target MyApp --config Release
 ```
 
-### CMake Example:
+## CMake Example:
 
 Project Folder Structure:
 
@@ -218,7 +218,7 @@ target_link_libraries(MyApp PRIVATE MyLib)
 
 ### Explanation
 
-- **Library**: MyLib is defined as a static library with two .cpp files.
+- **Library**: `MyLib` is defined as a static library with two .cpp files.
 - **Include Directory**: The include directory contains the public header for the library.
-- **Main Application**: The MyApp executable is linked to the MyLib library.
+- **Main Application**: The `MyApp` executable is linked to the `MyLib` library.
 - **Modularity**: The library and executable are organized into src and include folders, following common C++ project conventions.
