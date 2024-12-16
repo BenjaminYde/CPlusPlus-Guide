@@ -1,36 +1,34 @@
-# 1. Welcome to the C++ Guide 📚
+# Welcome to the C++ Guide 📚
 
 This repository is a C++ guide designed which is designed to be easily opened using VS Code or Github. It contains extensive documentation, code examples, and best practices to help you become a proficient C++ programmer. 
 The guide intends to be **to the point** so you can continue what really matters, programming.
 
-# 2. Execute Code Examples 🚀
+## Execute Code Examples 🚀
 
 Explore the `examples` directory for **interactive C++** code examples, easily executable inside a **Docker DevContainer** within **Visual Studio Code**. This setup ensures a consistent and streamlined coding environment, ideal for learning and experimentation.
 
-# 3. Guide Index 🗂️
+## Guide Index 🗂️
 
 **The following index contains categories with topics that are ready for visibility or completed.**  
 There is **more content incoming** so the categories will **not be visible here** until it is completed.    
 Want to see what topics are in todo? See the **index per category**.
 
-## CMake & Tooling
+### CMake & Tooling
 
 - Tooling
   - [Compilers Overview](./guide/cmake_and_tooling/tooling/compilers.md)
+  - TODO: Compilation Process
   - [Build Generators](./guide/cmake_and_tooling/tooling/build_generators.md)
-  - [Tooling Overview](./guide/cmake_and_tooling/tooling/tooling.md)
-  - TODO:
-    - Compilation Process
+  - TODO: Dependency Management
+  - [Common Tools](./guide/cmake_and_tooling/tooling/tooling.md)
 - CMake
   - [Introduction](./guide/cmake_and_tooling/cmake/introduction.md)
   - [Generators](./guide/cmake_and_tooling/cmake/generators.md)
   - [Targets](./guide/cmake_and_tooling/cmake/targets.md)
+  - TODO: CMakePresets
   - [Best Practices](./guide/cmake_and_tooling/cmake/best_practices.md)
-  - TODO:
-    - CMakePresets
-    - CMakePresets
 
-## Containers
+### Containers
 
 - Sequence Containers
   - [Creating And Using Arrays](./guide/containers/sequence/creating_and_using_arrays.md)
@@ -38,7 +36,7 @@ Want to see what topics are in todo? See the **index per category**.
   - [std::array](./guide/containers/sequence/std_array.md)
   - [Dynamic Allocation](./guide/containers/sequence/dynamic_allocation.md)
   - [Iterators](./guide/containers/sequence/iterators.md)
-  - [Standard Library Algorithms (STL)](./guide/containers/sequence/standard_library_algorithms.md)
+  - [Standard Library Functions (STL)](./guide/containers/sequence/standard_library_functions.md)
   - [std::list](./guide/containers/sequence/std_list.md)
   - [std::deque](./guide/containers/sequence/std_deque.md)
 - Associative Containers
@@ -55,7 +53,7 @@ Want to see what topics are in todo? See the **index per category**.
   - [Views](./guide/containers/views.md)
   - [Container Adaptors](./guide/containers/container_adaptors.md)
 
-## Strings
+### Strings
 
 - [String Literals](./guide/strings/string_literals.md)
 - [IO Streams](./guide/strings/io_streams.md)
@@ -69,12 +67,12 @@ Want to see what topics are in todo? See the **index per category**.
 - [File IO](./guide/strings/file_io.md)
 - [File Streams](./guide/strings/file_streams.md)
 
-## Functions
+### Functions
 
 - [Function Pointers](./guide/functions/function_pointers.md)
 - [Lambdas](./guide/functions/lambdas.md)
 
-## Object Oriented Programming (OOP)
+### Object Oriented Programming (OOP)
 
 - [Classes vs Structs](./guide/oop/classes_vs_structs.md)
 - [Constructors](./guide/oop/constructors.md)
@@ -104,7 +102,7 @@ Want to see what topics are in todo? See the **index per category**.
   - [Multiple Inheritance](./guide/oop/virtual_functions/multiple_inheritance.md)
   - [Object Slicing](./guide/oop/virtual_functions/object_slicing.md)
 
-## Memory Management
+### Memory Management
 
 - [Pointers](./guide/memory_management/pointers.md)
 - [References](./guide/memory_management/references.md)
@@ -116,7 +114,7 @@ Want to see what topics are in todo? See the **index per category**.
 - [Smart Pointers And Forward Declaration](./guide/memory_management/smart_pointers_and_forward_declaration.md)
 - [Shallow Copy vs Deep Copy](./guide/memory_management/shallow_copy_vs_deep_copy.md)
 
-## Concurreny
+### Concurreny
 
 - [Introduction](./guide/concurrency/introduction.md)
 - STL Threads
@@ -124,7 +122,7 @@ Want to see what topics are in todo? See the **index per category**.
   - [std::async and std::future](./guide/concurrency/stl_threads/async_and_future.md)
 - [POSIX vs STL Threads](./guide/concurrency/posix_vs_stl_threads.md)
 
-## Typing
+### Typing
 
 - [Auto](./guide/typing/auto.md)
 - Casting
@@ -135,21 +133,21 @@ Want to see what topics are in todo? See the **index per category**.
 - [Using constexpr](./guide/typing/using_constexpr.md)
 - [Using constval](./guide/typing/using_constval.md)
 
-## Design Patterns & Idioms
+### Design Patterns & Idioms
 
 - Idioms
   - [RAII](./guide/design_patterns/raii.md)
   - [PIMPL](./guide/design_patterns/pimpl.md)
 
-## Todo
+### Todo
 
 - Design patterns
 - Templates
 - Error handling
 
-# 4. References 📍
+## References 📍
 
-## General
+### General
 
 - **CPP Reference**
     - This is more of a reference but contains examples and explanations that can serve as a learning resource.
@@ -159,7 +157,7 @@ Want to see what topics are in todo? See the **index per category**.
 - **C++ Core Guidelines**
   - Link [here](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 
-## Tutorials
+### Tutorials
 
 * **LearnCpp**
     - Devoted to teaching you how to program in C++. Whether you’ve had any prior programming experience or not, the tutorials on this site will walk you through all the steps to write, compile, and debug your C++ programs, all with plenty of examples.
@@ -169,7 +167,7 @@ Want to see what topics are in todo? See the **index per category**.
     - Offers a variety of tutorials and exercises ranging from basic to advanced topics.
     TutorialsPoint: C++ Tutorial
 
-## Books
+### Books
 
 - **Software Architecture with C++**
   - Design modern systems using effective architecture concepts, design patterns, and techniques with C++20
