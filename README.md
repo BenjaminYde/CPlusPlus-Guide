@@ -156,6 +156,8 @@ Want to see what topics are in todo? See the **index per category**.
     - Link [here](https://www.tutorialspoint.com/compile_cpp_online.php)
 - **C++ Core Guidelines**
   - Link [here](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+- **Google C++ Style Guide**
+  - Link [here](https://google.github.io/styleguide/cppguide.html).
 
 ### Tutorials
 
@@ -169,19 +171,29 @@ Want to see what topics are in todo? See the **index per category**.
 
 ### Books
 
-- **Software Architecture with C++**
+- **Software Architecture with C++**, (Paid)
   - Design modern systems using effective architecture concepts, design patterns, and techniques with C++20
   - By Adrian Ostrowski & Piotr Gaczkowski, April 2021, 540 pages
-  - Link [here](https://www.packtpub.com/product/software-architecture-with-c/9781838554590)
-- **Professional C++**
+  - Link [here](https://www.packtpub.com/product/software-architecture-with-c/9781838554590).
+- **Professional C++**, (Paid)
   - Professional C++, 5th Edition raises the bar for advanced programming manuals. Complete with a comprehensive overview of the new capabilities of C++20, each feature of the newly updated programming language is explained in detail and with examples.
   - By Marc Gregoire, Februari 2021, 1312 pages
-  - Link [here](https://www.amazon.com.be/-/en/Marc-Gregoire/dp/1119695406)
-- **Modern CMake for C++** (2nd edition)
+  - Link [here](https://www.amazon.com.be/-/en/Marc-Gregoire/dp/1119695406).
+- **Modern CMake for C++** (2nd edition), (Paid)
   - Write comprehensive, professional-standard CMake projects and ensure the quality and simplicity of your solutions
   - By Rafal Świdziński, May 2024, 502 pages
-  - Link [here](https://www.packtpub.com/en-be/product/modern-cmake-for-c-9781805123361)
-- **CMake Best Practices** (2nd edition)
+  - Link [here](https://www.packtpub.com/en-be/product/modern-cmake-for-c-9781805123361).
+- **CMake Best Practices** (2nd edition), (Paid)
   - Write comprehensive, professional-standard CMake projects and ensure the quality and simplicity of your solutions
   - By Dominik Berner & Mustafa Kemal Gilor, Aug 2024, 502 pages
-  - Link [here](https://www.packtpub.com/en-be/product/cmake-best-practices-9781835880654)
+  - Link [here](https://www.packtpub.com/en-be/product/cmake-best-practices-9781835880654).
+- **Learning C++** (Free)
+  - Free unaffiliated eBook created from Stack Overflow contributors.
+  - Link [here](https://riptutorial.com/Download/cplusplus.pdf)
+- **More C++ Idioms** (Free)
+  - Link [here](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms).
+- **C++ Programming: Code patterns design** (Free)
+  - Software design patterns are abstractions that help structure system designs.
+  - Link [here](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns).
+- **C++ Notes for Professionals book** (Free)
+  - Link [here](https://goalkicker.com/CPlusPlusBook/).
