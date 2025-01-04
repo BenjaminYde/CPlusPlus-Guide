@@ -187,6 +187,9 @@ Want to see what topics are in todo? See the **index per category**.
   - Write comprehensive, professional-standard CMake projects and ensure the quality and simplicity of your solutions
   - By Dominik Berner & Mustafa Kemal Gilor, Aug 2024, 502 pages
   - Link [here](https://www.packtpub.com/en-be/product/cmake-best-practices-9781835880654).
+- **Advanced C and C++ Compiling** (Paid)
+  - Learning how to write C/C++ code is only the first step. To be a serious programmer, you need to understand the structure and purpose of the binary files produced by the compiler: object files, static libraries, shared libraries, and, of course, executables.
+  - Link [here](https://www.amazon.com/Advanced-C-Compiling-Milan-Stevanovic/dp/1430266678)
 - **Learning C++** (Free)
   - Free unaffiliated eBook created from Stack Overflow contributors.
   - Link [here](https://riptutorial.com/Download/cplusplus.pdf)
@@ -197,3 +200,8 @@ Want to see what topics are in todo? See the **index per category**.
   - Link [here](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns).
 - **C++ Notes for Professionals book** (Free)
   - Link [here](https://goalkicker.com/CPlusPlusBook/).
+
+### Interviews
+
+- **C++ Interview Questions and Answers** (geeksforgeeks.org)
+  - Link [here](https://www.geeksforgeeks.org/cpp-interview-questions/).
