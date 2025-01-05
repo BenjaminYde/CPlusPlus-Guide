@@ -8,22 +8,22 @@ GCC was started in the mid-1980s by Richard Stallman and the Free Software Found
 
 ### Core Philosophy
 
-- **Freedom and Openness**: GCC was developed under the GNU Project to provide a free compiler, and it remains under the GPL.
-- **Portability and Ubiquity**: GCC is widely available on many architectures and is the default compiler on most Linux distributions.
-- **Sustained Community Development**: GCC has a large community of contributors and is continuously updated.
+- **Freedom and Openness**: Developed under the GNU Project, GCC remains under the GPL, emphasizing free software principles.
+- **Portability and Ubiquity**: Widely available on many architectures, it's the default compiler on most Linux distributions.
+- **Sustained Community Development**: Benefits from a large community of contributors and continuous updates.
 
 ### Why Developers Love It
 
-- **Mature Optimization Pipeline**: Decades of work have made GCC’s optimizations robust and effective.
-- **Extensive Target Support**: GCC supports a wide range of architectures (x86, ARM, RISC-V, etc.).
-- **Stable and Widely Used**: GCC builds much of the open-source software ecosystem.
-- **Comprehensive Documentation and Community**: Documentation and community support are extensive.
+- **Mature Optimization Pipeline**: Decades of development have led to robust and effective optimizations.
+- **Extensive Target Support**: Supports a vast range of architectures (x86, ARM, RISC-V, etc.).
+- **Stable and Widely Used**: A cornerstone of the open-source software ecosystem.
+- **Comprehensive Documentation and Community**: Extensive resources and a strong community provide extensive support.
 
 ### Drawbacks
 
-- **Compilation Speed**: GCC can be slower than Clang in some scenarios, especially when using certain optimization levels or with very large codebases.
-- **Diagnostics Quality**: Historically poorer diagnostics compared to Clang, though improvements have been made.
-- **Less Modular Internal Design**: Its architecture is more monolithic, making tooling integration more challenging than with LLVM.
+- **Compilation Speed**: Can be slower than Clang in some scenarios, especially with certain optimization levels or large codebases.
+- **Diagnostics Quality**: Historically poorer diagnostics compared to Clang, although improvements have been made.
+- **Less Modular Internal Design**: Its monolithic architecture can make it harder to integrate into custom tooling compared to LLVM's modular design. This can be a challenge when developing new tools that need to interact directly with the compiler's internal processes.
 
 ### Best Uses
 
@@ -34,13 +34,13 @@ GCC was started in the mid-1980s by Richard Stallman and the Free Software Found
 
 ### History and Reason for Existence
 
-MSVC emerged as the primary compiler for the Windows ecosystem. Microsoft needed a robust, well-integrated compiler to support its operating system, frameworks (like MFC, ATL), and the growing number of Windows applications. MSVC’s tight integration with the Visual Studio IDE and the Windows API made it the natural choice for professional Windows application and driver developers.
+MSVC emerged as the primary compiler for the Windows ecosystem. Microsoft needed a robust, well-integrated compiler to support its operating system, frameworks and the growing number of Windows applications. MSVC’s tight integration with the Visual Studio IDE and the Windows API made it the natural choice for professional Windows application and driver developers.
 
 ### Core Philosophy
 
-- **Integration with the Microsoft Ecosystem**: MSVC is closely tied to Windows APIs and Visual Studio.
-- **Enterprise-Grade Stability and Backward Compatibility**: MSVC maintains stable ABIs and ensures backward compatibility for long-lived projects.
-- **Modernization Over Time**: MSVC, especially since Visual Studio 2015 and later, has focused on improving standards conformance and optimization quality. Microsoft has invested heavily in aligning MSVC with ISO C++ standards in recent years.
+- **Integration with the Microsoft Ecosystem**: Closely tied to Windows APIs and the Visual Studio IDE.
+- **Enterprise-Grade Stability and Backward Compatibility**: Maintains stable ABIs and ensures backward compatibility for long-lived projects.
+- **Modernization Over Time**: Significant investments since Visual Studio 2015 to improve standards conformance and optimization.
 
 ### Why Developers Love It
 
@@ -68,8 +68,8 @@ LLVM started in the early 2000s at the University of Illinois as a modern, modul
 
 ### Core Philosophy
 
-- **Modularity and Extensibility**: LLVM is designed as a set of reusable components. Clang, as an LLVM front-end, leverages this architecture.
-- **High-Quality Diagnostics and Tooling**: Clang’s error messages, static analyzers, and integration with tools like clang-tidy and clang-format are well-regarded.
+- **Modularity and Extensibility**: LLVM is designed as a set of reusable components, and Clang leverages this architecture.
+- **High-Quality Diagnostics and Tooling**: Well-regarded for its error messages, static analyzers, and integration with tools like clang-tidy and clang-format.
 - **Innovation and Rapid Evolution**: The LLVM project continually evolves, adding new optimizations, backends, and language support.
 
 ### Why Developers Love It
