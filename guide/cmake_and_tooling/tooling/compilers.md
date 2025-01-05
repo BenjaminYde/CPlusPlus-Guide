@@ -74,15 +74,24 @@ LLVM started in the early 2000s at the University of Illinois as a modern, modul
 
 ### Why Developers Love It
 
-- **Exceptional Diagnostics**: Clang’s clear and instructive error messages are a known strength.
-- **Integration with IDEs and Tools**: Many modern IDEs and analysis tools are built around Clang’s libraries.
-- **Modern Design and Good Performance**: Clang often compiles quickly, and LLVM’s optimizations are competitive with GCC’s.
+- **Clarity and Precision**: Clang's error and warning messages are renowned for their clarity and precision. They often pinpoint the exact location of an error and provide helpful context, making it easier to understand and fix problems.
+  - **Fix-It Hints**: In many cases, Clang suggests possible fixes for errors, saving you time and effort.
+  - **Impact**:  Faster debugging, easier code comprehension, and a more pleasant development experience, especially for large and complex codebases.
+- **Improved Code Quality Through Static Analysis**
+  - Clang has a powerful built-in static analyzer that can detect potential bugs like memory leaks, null pointer dereferences, and other common errors before we even run the code. This will lead to higher code quality and fewer runtime issues.
+  - Clang is part of the LLVM ecosystem, which gives us access to a wide range of powerful tools for code analysis, optimization, and transformation.
+- **Modern Design and Good Performance**:
+  - **Performance**: Clang is often faster than GCC at compiling code, particularly for large projects and template-heavy code.
+  **Impact**: Reduced build times lead to faster development cycles and improved developer productivity. This is especially noticeable on larger projects.
 - **Cross-Platform Support**: Clang is widely used on macOS, Linux, BSDs, and has growing support on Windows via clang-cl.
+- **Rapid Adoption of New C++ Standards**:
+  - **Active Development**: Clang is under very active development, and the developers often prioritize implementing new C++ features and standards quickly.
+  - **Impact**: If you want to use the latest and greatest C++ features, Clang is often the first compiler to provide full support.
 
 ### Drawbacks
 
-- **Less Historical Maturity in Some Special Cases**: In some very specialized workloads or older architectures, GCC might still be better-tuned.
-- **Platform Support Gaps (Now Mostly Closed)**: Early in its development, Clang lacked support for some platforms or certain embedded environments. Over time, many of these gaps have been addressed, and Clang is now quite universal. 
+- **Legacy Codebases**: Very old projects built and tested with GCC might be safer to stick with GCC.
+- **Specific Platform/Architecture Support**: GCC might have better support for some niche platforms or architectures not well-supported by Clang.
 
 ### Best Uses
 

@@ -391,7 +391,7 @@ void MyClass::myFunction(double a) { // Error! Parameter type mismatch
 
 **Error**: When you try to compile and link this code, you'll likely get a linker error because the `myFunction` expects the version that takes an `int`, but the implementation in `myclass.cpp` is for a version that takes a `double`. The mangled names will be different, and the linker won't be able to find the correct match.
 
-### Exception Handling:
+## Exception Handling:
 
 > [!CAUTION]
 > TODO
@@ -400,6 +400,25 @@ void MyClass::myFunction(double a) { // Error! Parameter type mismatch
 
 > [!CAUTION]
 > TODO
+
+## Is GCC compatible with Clang/LLVM?
+
+**Short Answer**:  Yes, to a large extent on platforms that use the Itanium C++ ABI, but there are nuances and potential pitfalls.
+
+**Standard Library (libstdc++ vs. libc++)**:
+
+- **libstdc++**: GCC's standard library implementation.
+- **libc++**: LLVM's standard library implementation.
+- **Compatibility**: You generally cannot mix and match object files compiled with libstdc++ and libc++ unless great care is taken (especially with older versions). 
+
+On Linux, GCC and Clang generally have **very good ABI compatibility** when **using the same standard library** (typically libstdc++).
+
+- **Linking Object Files**: In many cases, you can successfully link object files compiled with GCC and Clang on Linux (if they use the same standard library).
+- **Shared Libraries**: You need to be more careful with shared libraries. If a shared library is compiled with GCC, it's generally safest to use GCC to compile code that links against it. The same applies to Clang and its standard library.
+- **Mixing and Matching**: Problems mainly arise when you try to mix object files or libraries compiled with:
+  - GCC and libstdc++
+  - Clang and libc++ (less common on Linux, more common on macOS)
+
 
 ## References
 

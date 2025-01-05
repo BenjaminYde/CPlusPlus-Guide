@@ -6,12 +6,15 @@ Modern C++ development is aided by a rich ecosystem of tools designed to enhance
 
 Formatting tools automatically enforce a consistent coding style across a codebase, making the code easier to read and maintain.
 
-### clang-format
+### Clang-Format
 - **What It Is**: A tool to format C++ (and other C-family language) code according to a style guide.
 - **How It Works**: Reads `.clang-format` configuration files (or command-line options) to define rules like indentation, brace placement, and line width.
 - **Key Features**:
   - Supports widely used style guides (e.g., Google, LLVM, Chromium).
   - Easily integrates with IDEs and editors like VSCode, Vim, and Emacs.
+- **Use Cases**:
+  - Enforcing consistent code style across a project.
+  - Automating code formatting, saving developers time and effort.
 
 Command Example:
 
@@ -22,14 +25,17 @@ Command Example:
 
 Linters detect issues like code smells, violations of coding guidelines, or potential bugs.
 
-### clang-tidy
+### Clang-Tidy
 
-- **What It Is**: A linter and static analysis tool for C++.
+- **What It Is**: A Clang-based "linter" tool that provides additional code analysis checks beyond what the compiler typically offers. It can detect style violations, improve code readability, and modernize C++ code (e.g., suggesting the use of newer C++ features).
 - **Key Features**:
     - Suggests improvements for modern C++ (e.g., converting raw pointers to `std::unique_ptr`).
     - Detects common issues like memory leaks and null pointer dereferences.
     - Configurable checks via `.clang-tidy` files.
-
+- **Use Cases**:
+  - Enforcing coding standards.
+  - Improving code consistency.
+  - Modernizing legacy C++ code.
 Command Example:
 
 ```bash
