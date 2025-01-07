@@ -19,7 +19,7 @@ Want to see what topics are in todo? See the **index per category**.
   - [Compilers Overview](./guide/cmake_and_tooling/tooling/compilers.md)
   - [Compilation Process](./guide/cmake_and_tooling/tooling/compilation_process.md)
   - [Build Generators](./guide/cmake_and_tooling/tooling/build_generators.md)
-  - TODO: Dependency Management
+  - [Dependency Management](./guide/cmake_and_tooling/tooling/dependency_management.md)
   - [Common Tools](./guide/cmake_and_tooling/tooling/tooling.md)
   - [ABI (Application Binary Interface)](./guide/cmake_and_tooling/tooling/abi.md)
 - CMake
