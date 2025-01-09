@@ -105,8 +105,8 @@ Want to see what topics are in todo? See the **index per category**.
 
 ### Memory Management
 
-- [Pointers](./guide/memory_management/pointers.md)
 - [References](./guide/memory_management/references.md)
+- [Pointers](./guide/memory_management/pointers.md)
 - [Smart Pointers](./guide/memory_management/smart_pointers.md)
 - [Using std::unique_ptr](./guide/memory_management/using_unique_ptr.md)
 - [Using std::shared_ptr](./guide/memory_management/using_shared_ptr.md)
