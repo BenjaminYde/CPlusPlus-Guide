@@ -108,11 +108,7 @@ Want to see what topics are in todo? See the **index per category**.
 - [References](./guide/memory_management/references.md)
 - [Pointers](./guide/memory_management/pointers.md)
 - [Smart Pointers](./guide/memory_management/smart_pointers.md)
-- [Using std::unique_ptr](./guide/memory_management/using_unique_ptr.md)
-- [Using std::shared_ptr](./guide/memory_management/using_shared_ptr.md)
-- [Using std::weak_ptr](./guide/memory_management/using_weak_ptr.md)
 - [Smart Pointers In Functions](./guide/memory_management/smart_pointers_in_functions.md)
-- [Smart Pointers And Forward Declaration](./guide/memory_management/smart_pointers_and_forward_declaration.md)
 - [Shallow Copy vs Deep Copy](./guide/memory_management/shallow_copy_vs_deep_copy.md)
 
 ### Concurreny
