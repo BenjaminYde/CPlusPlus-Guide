@@ -26,7 +26,7 @@ Want to see what topics are in todo? See the **index per category**.
   - [Introduction](./guide/cmake_and_tooling/cmake/introduction.md)
   - [Generators](./guide/cmake_and_tooling/cmake/generators.md)
   - [Targets](./guide/cmake_and_tooling/cmake/targets.md)
-  - TODO: CMakePresets
+  - [Targets](./guide/cmake_and_tooling/cmake/cmakepresets.mdd)
   - [Best Practices](./guide/cmake_and_tooling/cmake/best_practices.md)
 
 ### Containers
