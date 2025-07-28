@@ -21,8 +21,8 @@ The stack is used for **static memory allocation**. It contains local variables,
 
 The heap is the region of memory used for **dynamic memory allocation**. This is where you have explicit control over memory allocation and deallocation during runtime.
 
-- **Dynamic Allocation**: Memory is allocated on demand using operators like new (or malloc in C).
-- **Manual Deallocation**: Unlike the stack, the heap requires manual deallocation using delete (or free in C). Failure to deallocate leads to memory leaks.
+- **Dynamic Allocation**: Memory is allocated on demand using operators like `new` (or `malloc` in C).
+- **Manual Deallocation**: Unlike the stack, the heap requires manual deallocation using `delete` (or `free` in C). Failure to deallocate leads to memory leaks.
 - **Larger Size**: The heap is typically much larger than the stack, limited primarily by available system RAM and virtual memory.
 - **Slower Access**: Heap allocation and deallocation are slower than stack operations. The memory manager needs to find suitable free blocks, and fragmentation can occur over time.
 - **Fragmentation**: As memory is repeatedly allocated and deallocated, the heap can become fragmented, meaning free space is broken into small, non-contiguous chunks. This can make it difficult to allocate large blocks of memory even if sufficient total free space exists.
@@ -40,9 +40,51 @@ Pointers are not merely about storing addresses; they are about enabling powerfu
   - **Example**: Passing a large image object to a function for processing. Instead of copying the entire image, you pass a pointer to it.
 - **Dynamic Memory Allocation**: When the size of data is unknown at compile time, or if you need data to persist beyond the scope of a function, pointers are essential. They allow you to allocate memory on the heap using `new` (or `new[]` for arrays), giving you flexibility and control over the lifetime of your data.
 
+## Types of Pointers in C++
+
+While the concept of a pointer is simple, C++ provides different "flavors" of pointers, each with a specific purpose.
+
+### 1. Raw Pointers
+
+This is the most basic form of a pointer, inherited from C. It's a simple variable that holds a memory address and provides no automatic memory management.
+
+#### Pros:
+
+- Fast and lightweight with no overhead.
+- Necessary for low-level hardware interaction and interfacing with C libraries.
+
+#### Cons:
+
+- **Unsafe**: They are the primary source of memory leaks and dangling pointers.
+- **No Ownership Semantics**: It's unclear who is responsible for deleting the pointed-to memory.
+
+### 2. Smart Pointers (Modern C++)
+
+Smart pointers are class objects that wrap a raw pointer and manage the lifetime of the pointed-to memory automatically using the **RAII (Resource Acquisition Is Initialization)** principle. When the smart pointer object goes out of scope, its destructor is called, which in turn deletes the raw pointer. This prevents most common memory leaks.
+
+- `std::unique_ptr`: Represents exclusive ownership. Only one `unique_ptr` can point to an object at a time. It's very lightweight and should be your default choice.
+- `std::shared_ptr`: Represents shared ownership. Multiple `shared_ptrs` can point to the same object. The object is deleted only when the last `shared_ptr` pointing to it is destroyed.
+- `std::weak_ptr`: A non-owning "observer" of a `shared_ptr`. It's used to break circular dependency cycles that can occur with `std::shared_ptr`.
+
+General Rule: In modern C++, you should prefer smart pointers over raw pointers for managing the lifetime of dynamically allocated objects.
+
 ## How to use pointers?
 
-### Declare The Pointer Using  (`*`)
+C++ has three fundamental operators for working with pointers and memory addresses:
+
+1. **Declaration** (`*`): Used when declaring a pointer variable. The preferred syntax is `int* ptr;` to clearly associate the `*` with the type.
+2. **Address-of** (`&`): Gets the memory address of an existing variable.
+```c++
+int x = 25; 
+int* ptr = &x; // 'ptr' now holds the memory address of 'x'.
+```
+3. **Dereference** (`*`): Accesses the value at the memory address the pointer is holding.
+```c++
+int y = *ptr; // 'y' is now 25. 
+*ptr = 30;    // 'x' is now 30.
+```
+
+### 1. Declare The Pointer Using  (`*`)
 
 Use `*` when you want to create a pointer to an object or when you want to access the value the pointer is pointing to. Pointers are useful when you need to pass an object to a function without making a copy, but you also need the flexibility of being able to change what the pointer points to.
 
@@ -58,7 +100,7 @@ int *ptr;
 int * ptr;
 ```
 
-### The Address-of Operator (`&`):
+### 2. The Address-of Operator (`&`):
 
 **Purpose**: Gets the memory address of a variable.
 
@@ -77,7 +119,7 @@ cout << food;  // Outputs the value of food (Pizza)
 cout << &food; // Outputs the memory address of food (**0x6dfed4**)
 ```
 
-### The Dereference Operator (`*`)
+### 3. The Dereference Operator (`*`)
 
 The dereference operator is the asterisk (`*`). When the `*` is placed before the name of a pointer variable, it dereferences the pointer, i.e., it retrieves the value stored at the memory address held by the pointer.
 
@@ -328,6 +370,57 @@ void main() {
 }
 ```
 
+## Function Pointers
+
+A pointer can also hold the memory address of a function. This allows you to treat functions as data, passing them to other functions or storing them in arrays. This is the foundation of callback mechanisms in C-style APIs.
+
+```c++
+void sayHello() {
+    std::cout << "Hello!" << std::endl;
+}
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    // A pointer to a function that takes no args and returns void.
+    void (*p_sayHello)();
+    p_sayHello = &sayHello;
+
+    // Call the function through the pointer.
+    (*p_sayHello)(); // Explicit dereference
+    p_sayHello();    // Implicit dereference (more common)
+
+    // A pointer to a function that takes two ints and returns an int.
+    int (*p_add)(int, int) = &add;
+    int result = p_add(5, 3); // result is 8
+    std::cout << result << std::endl;
+}
+```
+While `std::function` and lambdas are often used in modern C++, understanding function pointers is crucial for working with legacy code and C libraries.
+
+### Using the function pointer as parameter
+
+Function pointers can also be used as parameters to other functions. This allows the receiving function to call a function that was defined elsewhere:
+
+```c++
+void applyFunction(int (*func)(int, int), int x, int y) {
+   int result = func(x, y);
+   // Do something with result
+}
+applyFunction(add, 5, 3); // Calls 'add' function with 5 and 3
+```
+
+### Array of function pointers
+
+You can even have an array of function pointers, allowing you to index into an array to call different functions:
+`
+```c++
+int (*funcs[])(int, int) = {add, subtract, multiply, divide};
+int result = funcs[0](5, 3); // Calls 'add' function
+```
+
 ## Pointer Arithmetic
 
 ### Incrementing/Decrementing
@@ -354,6 +447,70 @@ You can use pointer arithmetic or array indexing interchangeably:
 
 ```c++
 *(ptr + 2) = 5; // Equivalent to 'arr[2] = 5;'
+```
+
+## Const Correctness
+
+`const` helps you write safer, more expressive code by telling the compiler (and other programmers) what should not be changed. With pointers, `const` can apply to the pointer itself or the data it points to.
+
+### Case 1
+
+`const int* ptr`: A pointer to a const int.
+- You cannot change the value at the address.
+- You can change where the pointer points.
+
+```c++
+int x = 10;
+int y = 20;
+const int* ptr = &x;
+
+// *ptr = 15; // ERROR: Cannot change the value through this pointer.
+ptr = &y;  // OK: Can change where the pointer points.
+```
+
+### Case 2
+
+`int* const ptr`: A const pointer to an int
+
+- You can change the value at the address.
+- You cannot change where the pointer points. It's locked to one address for its lifetime.
+
+```c++
+int x = 10;
+int y = 20;
+int* const ptr = &x;
+
+*ptr = 15; // OK: The value of x is now 15.
+// ptr = &y;  // ERROR: Cannot change the pointer itself.
+```
+
+### Case 3
+
+`const int* const ptr`: A const pointer to a const int
+
+- You cannot change the value at the address.
+- You cannot change where the pointer points.
+
+```c++
+int x = 10;
+int y = 20;
+const int* const ptr = &x;
+
+// *ptr = 15; // ERROR: Cannot change the value.
+// ptr = &y;  // ERROR: Cannot change the pointer.
+```
+
+### Why it matters
+
+Use `const` to prevent accidental modifications. If a function's only job is to read data via a pointer, it should accept a pointer-to-const.
+
+```c++
+// This function promises not to change the value it's looking at.
+void printInt(const int* ptr) {
+    if (ptr) {
+        std::cout << *ptr << std::endl;
+    }
+}
 ```
 
 ## How Not to Use Pointers: Common Pitfalls

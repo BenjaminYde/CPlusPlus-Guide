@@ -73,7 +73,6 @@ Want to see what topics are in todo? See the **index per category**.
 
 ### Functions
 
-- [Function Pointers](./guide/functions/function_pointers.md)
 - [Lambdas](./guide/functions/lambdas.md)
 
 ### Object Oriented Programming (OOP)
