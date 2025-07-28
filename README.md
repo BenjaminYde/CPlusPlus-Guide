@@ -15,21 +15,22 @@ Want to see what topics are in todo? See the **index per category**.
 
 ### CMake & Tooling
 
-- Tooling
-  - [Compilers Overview](./guide/cmake_and_tooling/tooling/compilers.md)
-  - [Compilation Process](./guide/cmake_and_tooling/tooling/compilation_process.md)
-  - [Build Generators](./guide/cmake_and_tooling/tooling/build_generators.md)
-  - [Dependency Management](./guide/cmake_and_tooling/tooling/dependency_management.md)
-  - [Common Tools](./guide/cmake_and_tooling/tooling/tooling.md)
-  - [ABI (Application Binary Interface)](./guide/cmake_and_tooling/tooling/abi.md)
+- Compilation Process
+  - [Compilation Process](./guide/tools/compilation/compilation_process.md)
+  - [Compiler Overview](./guide/tools/compilation/compilers.md)
+  - [Build Generators](./guide/tools/compilation/build_generators.md)
+  - [Dependency Management](./guide/tools/compilation/dependency_management.md)
+  - [ABI (Application Binary Interface)](./guide/tools/compilation/abi.md)
 - CMake
-  - [Introduction](./guide/cmake_and_tooling/cmake/introduction.md)
-  - [Generators](./guide/cmake_and_tooling/cmake/generators.md)
-  - [Variables](./guide/cmake_and_tooling/cmake/variables.md)
-  - [Targets](./guide/cmake_and_tooling/cmake/targets.md)
-  - [Presets](./guide/cmake_and_tooling/cmake/cmakepresets.md)
+  - [Introduction](./guide/tools/cmake/introduction.md)
+  - [Generators](./guide/tools/cmake/generators.md)
+  - [Variables](./guide/tools/cmake/variables.md)
+  - [Targets](./guide/tools/cmake/targets.md)
+  - [Presets](./guide/tools/cmake/cmakepresets.md)
   - Macros and Functions (todo)
-  - [Best Practices](./guide/cmake_and_tooling/cmake/best_practices.md)
+  - [Best Practices](./guide/tools/cmake/best_practices.md)
+- Other
+  - [Common Tools](./guide/tools/clang/tooling.md)
 
 ### Containers
 

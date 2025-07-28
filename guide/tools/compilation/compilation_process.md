@@ -443,8 +443,45 @@ After resolving symbols and performing relocation, the linker creates the final 
 
 ## Static vs Dynamic Libraries
 
-> [!CAUTION]
-> TODO
+Libraries are collections of pre-compiled code (object files) that can be reused across multiple programs. The primary distinction lies in when and how the library's code is incorporated into your final program.
+
+### Static Libraries (`.a`, `.lib`)
+
+A **static library** is an archive of object files. During the linking phase, all the required code from the static library (.a or .lib file) is copied directly into your final executable file. This creates a larger, but completely self-contained, program. Because the code is now part of the executable itself, the original library file is no longer needed at runtime.**
+#### Pros:
+
+- **Self-Contained Executable**: The executable has no external dependencies on the library, making distribution and deployment simpler. Just copy the executable, and it runs.
+- **Potentially Faster Execution**: Since the code is part of the executable, it can sometimes be loaded faster at runtime and allow for more aggressive whole-program optimizations by the linker.
+
+#### Cons:
+
+- **Larger Executable Size**: Every program that uses the library gets its own copy of the code, leading to larger file sizes.
+- **Difficult to Update**: If a bug is found in the library, every program that uses it must be re-linked and redistributed.
+
+### Dynamic Libraries (`.so`, `.dll`)
+
+A **dynamic library** (or shared library) is a separate file that is not copied into the executable at link time. Instead, the linker places a reference to the library in the executable. When the program is run, the operating system's dynamic loader finds the required library on the system and loads it into memory, where it can be shared among multiple running programs.
+
+#### Pros:
+
+- **Smaller Executable Size**: The executable is much smaller because it only contains references to the library, not the library code itself.
+- **Shared Memory**: A single copy of the library in memory can be used by multiple programs, saving RAM.
+- **Easier Updates**: To update the library, you can simply replace the .so or .dll file. All programs using it will benefit from the update on their next run without needing to be recompiled or re-linked (assuming the ABI remains compatible).
+
+#### Cons:
+
+- **External Dependency**: The program requires the dynamic library file to be present on the target system in a location the OS can find. This can lead to "DLL Hell" or dependency issues.
+- **Slightly Slower Startup**: There is a small overhead at program launch while the dynamic loader locates and loads the necessary libraries.
+
+### When to use which
+
+| Scenario                                          | Recommended Choice | Rationale                                                                                             |
+| :------------------------------------------------ | :----------------- | :---------------------------------------------------------------------------------------------------- |
+| Distributing a simple, standalone application     | Static Library     | Creates a single, easy-to-deploy executable file with no external dependencies.                       |
+| Developing a large system with many components    | Dynamic Library    | Allows modules to be updated independently and reduces overall memory footprint.                      |
+| Creating a plugin system                          | Dynamic Library    | Plugins are a natural fit for dynamic loading at runtime.                                             |
+| Working in a resource-constrained environment (disk space) | Dynamic Library    | Minimizes disk space by sharing common code.                                                          |
+| Prioritizing maximum performance and link-time optimization | Static Library     | Allows the linker to perform optimizations across both the application and library code.              |
 
 ## References
 
