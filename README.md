@@ -107,11 +107,11 @@ Want to see what topics are in todo? See the **index per category**.
 
 ### Memory Management
 
-- [References](./guide/memory_management/references.md)
-- [Pointers](./guide/memory_management/pointers.md)
-- [Smart Pointers](./guide/memory_management/smart_pointers.md)
-- [How To Use Smart Pointers With Functions](./guide/memory_management/smart_pointers_in_functions.md)
-- [Shallow Copy vs Deep Copy](./guide/memory_management/shallow_copy_vs_deep_copy.md)
+- [References](./guide/memory/references.md)
+- [Pointers](./guide/memory/pointers.md)
+- [Smart Pointers](./guide/memory/smart_pointers.md)
+- [How To Use Smart Pointers With Functions](./guide/memory/smart_pointers_in_functions.md)
+- [Shallow Copy vs Deep Copy](./guide/memory/shallow_copy_vs_deep_copy.md)
 
 ### Concurreny
 
