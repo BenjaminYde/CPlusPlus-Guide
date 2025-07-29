@@ -71,9 +71,6 @@ Want to see what topics are in todo? See the **index per category**.
 - [File IO](./guide/strings/file_io.md)
 - [File Streams](./guide/strings/file_streams.md)
 
-### Functions
-
-- [Lambdas](./guide/functions/lambdas.md)
 
 ### Object Oriented Programming (OOP)
 
@@ -112,6 +109,12 @@ Want to see what topics are in todo? See the **index per category**.
 - [Smart Pointers](./guide/memory/smart_pointers.md)
 - [How To Use Smart Pointers With Functions](./guide/memory/smart_pointers_in_functions.md)
 - [Shallow Copy vs Deep Copy](./guide/memory/shallow_copy_vs_deep_copy.md)
+
+### Functions
+
+- [Function Pointers](./guide/functions/function_pointers.md)
+- [Lambdas](./guide/functions/lambdas.md)
+- [std::function](./guide/functions/std_function.md)
 
 ### Concurreny
 
