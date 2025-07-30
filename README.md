@@ -54,7 +54,7 @@ Want to see what topics are in todo? See the **index per category**.
   - [std::unordered_multiset](./guide/containers/unordered_associative/std_unordered_multiset.md)
   - [std::unordered_multimap](./guide/containers/unordered_associative/std_unordered_multimap.md)
 - Other
-  - [Views](./guide/containers/views.md)
+  - [std::span](./guide/containers/std_span.md)
   - [Container Adaptors](./guide/containers/container_adaptors.md)
 
 ### Strings
@@ -116,14 +116,6 @@ Want to see what topics are in todo? See the **index per category**.
 - [Lambdas](./guide/functions/lambdas.md)
 - [std::function](./guide/functions/std_function.md)
 
-### Concurreny
-
-- [Introduction](./guide/concurrency/introduction.md)
-- STL Threads
-  - [std::thread](./guide/concurrency/stl_threads/thread.md)
-  - [std::async and std::future](./guide/concurrency/stl_threads/async_and_future.md)
-- [POSIX vs STL Threads](./guide/concurrency/posix_vs_stl_threads.md)
-
 ### Typing
 
 - [Auto](./guide/typing/auto.md)
@@ -134,6 +126,14 @@ Want to see what topics are in todo? See the **index per category**.
   - [dynamic_cast](./guide/typing/casting/dynamic_cast.md)
 - [Using constexpr](./guide/typing/using_constexpr.md)
 - [Using constval](./guide/typing/using_constval.md)
+
+### Concurreny
+
+- [Introduction](./guide/concurrency/introduction.md)
+- STL Threads
+  - [std::thread](./guide/concurrency/stl_threads/thread.md)
+  - [std::async and std::future](./guide/concurrency/stl_threads/async_and_future.md)
+- [POSIX vs STL Threads](./guide/concurrency/posix_vs_stl_threads.md)
 
 ### Design Patterns & Idioms
 
