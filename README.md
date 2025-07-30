@@ -35,7 +35,7 @@ Want to see what topics are in todo? See the **index per category**.
 ### Containers
 
 - Sequence Containers
-  - [Creating And Using Arrays](./guide/containers/sequence/creating_and_using_arrays.md)
+  - [C-Style Arrays](./guide/containers/sequence/c_style_arrays.md)
   - [Loops](./guide/containers/sequence/loops.md)
   - [std::array](./guide/containers/sequence/std_array.md)
   - [Dynamic Allocation](./guide/containers/sequence/dynamic_allocation.md)
