@@ -1,5 +1,8 @@
+# `std::set`: The Ordered Set
+
 `std::set` in C++ is a dynamic container that stores unique, automatically sorted elements and allows for fast look-up, addition, and deletion operations, but it lacks random access by index and may have higher memory overhead.
-### Characteristics 
+
+## Features 
 
 - **Sorted Container**: The elements in a `std::set` are automatically sorted upon insertion. By default, sorting is done using the `<` operator, but you can also provide a custom comparator function to sort elements according to custom rules.
 
@@ -18,7 +21,8 @@
 - **Custom Comparators**: Flexibility is provided in terms of ordering the elements by allowing custom comparator functions.
 
 - **Low Memory Overhead**: Typically has less memory overhead compared to hash-based containers like `std::unordered_set`.
-### Basic Usage
+
+## Basic Usage
 
 Here's an example to demonstrate how `std::set` can be used:
 
@@ -53,36 +57,29 @@ int main() {
 }
 ```
 
-### When to use `std::set`
+## When to use `std::set`
 
 - When you need to keep elements in a sorted manner without manual reordering.
 - When you need fast look-ups but do not require duplicates.
 - When you want to filter out duplicates automatically.
-### Limitations
+
+## Limitations
 
 - Unlike `std::vector` or `std::deque`, random access by index is not available; you have to iterate to an element.
 - Higher overhead due to maintaining the balanced tree structure, both in terms of memory and computational cost for insertions/deletions.
 - All elements must be sortable and comparable, meaning you have to provide a custom comparator for custom types that do not have natural ordering defined.
 
 ## Common functions
-### Element Management
 
 - `insert(value)`: Inserts a unique value, maintaining sorted order.
-- `emplace(args)`: Constructs and inserts a unique value in-place.
 - `erase(value)`: Removes a specific value.
 - `clear()`: Clears all elements.
-### Element Lookup
-
 - `find(value)`: Returns an iterator to the found element, or `end()` if not found.
 - `count(value)`: Returns 1 if the element exists, otherwise 0 (since duplicates aren't allowed).
 - `lower_bound(value)`: Finds the position of the first element not less than `value`.
 - `upper_bound(value)`: Finds the position of the first element greater than `value`.
-### Set Properties
-
 - `size()`: Returns the number of elements in the set.
 - `empty()`: Checks if the set is empty.
 - `max_size()`: Returns the maximum number of elements the set can hold.
-### Iteration
-
 - `begin()`, `end()`: Provide iterators to the beginning and end of the set.
 - `rbegin()`, `rend()`: Provide reverse iterators to the set.

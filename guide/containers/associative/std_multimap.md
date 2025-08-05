@@ -1,5 +1,8 @@
-`std::multimap` is a C++ container that stores key-value pairs in a sorted manner and allows for duplicate keys, unlike `std::map`.
-### Characteristics
+# `std::multimap`: The Ordered Multi-Dictionary
+
+`std::multimap` is the C++ Standard Library's implementation of an ordered associative container that stores key-value pairs, sorted by key. Its defining feature, which separates it from `std::map`, is that it allows for duplicate keys. Each key can be associated with multiple different values.
+
+## Features
 
 - **Sorted Container**: The key-value pairs in `std::multimap` are automatically sorted upon insertion by their keys. Sorting is done using the `<` operator by default, or a custom comparator can be specified.
 
@@ -18,7 +21,8 @@
 - **Low Memory Overhead**: Typically has less memory overhead compared to hash-based containers like `std::unordered_multimap`.
 
 - **Higher CPU Time for Search**: Although it usually has lower memory overhead, `std::multimap` generally requires more CPU time (`O(log n)`) for search operations compared to hash-based containers like `std::unordered_multimap` (`O(1)` on average).
-## Basic usage 
+
+## Basic usage
 
 ```c++
 #include <iostream>
@@ -45,31 +49,26 @@ int main() {
     return 0;
 }
 ```
+
 ## When to Use
 
 - When you need to associate multiple values with keys.
 - When you want these associations to be sorted by the keys.
 - When you need fast look-ups.
+
 ## Limitations
 
 - No direct access by index.
 - Higher memory and computational overhead for insertions/deletions compared to unordered containers like `std::unordered_multimap`.
+
 ## Common Functions
 
-### Element Management
-
 - `insert({key, value})`: Inserts a key-value pair, maintaining sorted order by key.
-- `emplace(args)`: Constructs and inserts a key-value pair in-place.
 - `erase(key)`: Removes all instances of a specific key.
 - `clear()`: Removes all key-value pairs.
-### Element Lookup
-
 - `find(key)`: Returns an iterator to the first occurrence of the key, or `end()` if not found.
 - `count(key)`: Returns the number of occurrences of a key.
-### Map Properties
-
 - `size()`: Returns the number of key-value pairs.
 - `empty()`: Checks if the multimap is empty.
-### Iteration
 
 - `begin()`, `end()`: Iterators to traverse key-value pairs in sorted order.
