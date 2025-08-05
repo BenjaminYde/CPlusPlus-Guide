@@ -1,8 +1,7 @@
 # The Modern C++ Guide 📚
 
 <table width="100%" style="border: none;">
-<tr style="vertical-align: top;">
-<td width="50%">
+<td width="60%" valign="top">
 
 ### 👋 Welcome!
 
@@ -11,9 +10,10 @@ This repository is a practical, **to-the-point guide** for developers looking to
 The core philosophy is simple: **learn by doing**. I get straight to the point so you can spend less time reading and more time programming.
 
 This guide is **Markdown**, so it is easily opened using **Visual Studio Code** or **Github**. It contains extensive documentation, code examples and best practices to help you become a proficient C++ programmer.
+<br><br>
 </td>
 
-<td width="40%">
+<td width="40%" valign="top">
 
 ### 🚀 Execute Code Examples 
 
@@ -28,10 +28,10 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 ## 🗂️ Table of Contents 
 
 <table width="100%" style="border: none;">
-<tr style="vertical-align: top;">
-<td width="33%">
+<tr valign="top">
+<td width="33%" style="padding-bottom: 50px;">
 
-### 🛠️ CMake & Tooling
+#### 🛠️ CMake & Tooling
 
 - Compilation Process
   - [Compilation Process](./guide/tools/compilation/compilation_process.md)
@@ -53,7 +53,7 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 </td>
 <td width="33%">
 
-### 📦 Containers
+#### 📦 Containers
 
 - Sequence Containers
   - [C-Style Arrays](./guide/containers/sequence/c_style_arrays.md)
@@ -77,11 +77,11 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 - Other
   - [std::span](./guide/containers/std_span.md)
   - [Container Adaptors](./guide/containers/container_adaptors.md)
-
+<br><br>
 </td>
 <td width="33%">
 
-### 📜 Strings
+#### 📜 Strings
 
 - [String Literals](./guide/strings/string_literals.md)
 - [IO Streams](./guide/strings/io_streams.md)
@@ -97,10 +97,10 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 
 </td>
 </tr>
-<tr style="vertical-align: top;">
-<td>
+<tr valign="top">
+<td width="33%">
 
-### 🏛️ Object Oriented (OOP)
+#### 🏛️ Object Oriented Programming (OOP)
 
 - [Classes vs Structs](./guide/oop/classes_vs_structs.md)
 - [Constructors](./guide/oop/constructors.md)
@@ -113,11 +113,11 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 - [Object Relationships](./guide/oop/object_relationships.md)
 - [Inheritance](./guide/oop/inheritance/_index.md)
 - [Virtual Functions](./guide/oop/virtual_functions/_index.md)
-
+<br><br>
 </td>
-<td>
+<td width="33%">
 
-### 🧠 Memory Management
+#### 🧠 Memory Management
 
 - [References](./guide/memory/references.md)
 - [Pointers](./guide/memory/pointers.md)
@@ -126,9 +126,9 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 - [Shallow Copy vs Deep Copy](./guide/memory/shallow_copy_vs_deep_copy.md)
 
 </td>
-<td>
+<td width="33%">
 
-### 🎭 Functions
+#### 🎭 Functions
 
 - [Function Pointers](./guide/functions/function_pointers.md)
 - [Lambdas](./guide/functions/lambdas.md)
@@ -136,10 +136,10 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 
 </td>
 </tr>
-<tr style="vertical-align: top;">
-<td>
+<tr valign="top">
+<td width="33%">
 
-### 🔗 Typing, Casting & ConstExpr
+#### 🔗 Typing, Casting & ConstExpr
 
 - [Auto](./guide/typing/auto.md)
 - Casting
@@ -149,30 +149,30 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
   - [dynamic_cast](./guide/typing/casting/dynamic_cast.md)
 - [Using constexpr](./guide/typing/using_constexpr.md)
 - [Using constval](./guide/typing/using_constval.md)
-
+<br><br>
 </td>
-<td>
+<td width="33%">
 
-### ⚡ Concurrency
+#### ⚡ Concurrency
 - [Introduction](./guide/concurrency/introduction.md)
 - STL Threads
   - [std::thread](./guide/concurrency/stl_threads/thread.md)
   - [std::async and std::future](./guide/concurrency/stl_threads/async_and_future.md)
 - [POSIX vs STL Threads](./guide/concurrency/posix_vs_stl_threads.md)
 </td>
-<td>
+<td width="33%">
 
-### 🎨 Design Patterns & Idioms
+#### 🎨 Design Patterns & Idioms
 - Idioms
   - [RAII](./guide/design_patterns/raii.md)
   - [PIMPL](./guide/design_patterns/pimpl.md)
 
 </td>
 </tr>
-<tr style="vertical-align: top;">
+<tr valign="top">
 <td colspan="3">
 
-### 🚧 Todo
+#### 🚧 Todo
 - Design patterns
 - Templates
 - Error handling
@@ -184,7 +184,7 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 ## 📍 References
 
 <table width="100%" style="border: none;">
-<tr style="vertical-align: top;">
+<tr valign="top">
 <td width="50%">
 
 ### General
