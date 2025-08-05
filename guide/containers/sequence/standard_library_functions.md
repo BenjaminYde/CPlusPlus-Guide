@@ -109,19 +109,22 @@ You can sort a container of structs based on a specific attribute.
 ```c++
 #include <algorithm>
 #include <vector>
+#include <string>
 
 struct Person {
     std::string name;
     int age;
 };
 
-std::vector<Person> people = {{"Alice", 30}, {"Bob", 20}, {"Charlie", 40}};
+int main() {
+    std::vector<Person> people = {{"Alice", 30}, {"Charlie", 25}, {"Bob", 40}};
 
-std::sort(
-	people.begin(), 
-	people.end(),
-	[](const Person &a, const Person &b) { return a.age < b.age; });
-// people sorted by age: {{"Bob", 20}, {"Alice", 30}, {"Charlie", 40}}
+    // Sort by age using a lambda
+    std::sort(people.begin(), people.end(), [](const Person& a, const Person& b) {
+        return a.age < b.age;
+    });
+    // people is now {Charlie, 25}, {Alice, 30}, {Bob, 40}
+}
 ```
 ## `std::for_each`
 
@@ -257,38 +260,51 @@ for (int n : destination) {
 
 ## `std::partition`
 
-Rearranges elements so that elements satisfying a given predicate appear before others.
+Rearranges elements such that all elements satisfying a predicate come before all elements that do not. It returns an iterator to the first element of the second group. This is the core algorithm used in Quicksort.
 
 ```c++
 #include <algorithm>
 #include <vector>
 #include <iostream>
 
-std::vector<int> numbers = {1, 2, 3, 4, 5, 6};
-auto it = std::partition(numbers.begin(), numbers.end(), [](int n) { return n % 2 == 0; });
+int main() {
+    std::vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-// numbers: {2, 4, 6, 1, 3, 5} (even numbers first)
-for (int n : numbers) {
-    std::cout << n << " ";
+    // Partition the vector into even and odd numbers
+    auto partition_point = std::partition(v.begin(), v.end(), [](int n) {
+        return n % 2 == 0; // The condition for the "first" group
+    });
+
+    // v is now something like {8, 2, 6, 4, 5, 7, 3, 9, 1}
+    // All even numbers are before all odd numbers.
+    std::cout << "Even numbers: ";
+    for (auto it = v.begin(); it != partition_point; ++it) {
+        std::cout << *it << " ";
+    }
 }
 ```
 
 ## `std::unique`
 
-Removes consecutive duplicate elements in a range.
+Removes consecutive duplicate elements from a range. This is almost always used after sorting to find all unique elements. 
+
+**Important**: It doesn't actually shorten the container. It shuffles the unique elements to the front and returns an iterator to the new "logical" end. You must use `erase` to actually remove the leftover elements.
 
 ```c++
 #include <algorithm>
 #include <vector>
-#include <iostream>
 
-std::vector<int> numbers = {1, 1, 2, 2, 3, 4, 4};
-auto it = std::unique(numbers.begin(), numbers.end());
-// numbers: {1, 2, 3, 4, ...}
+int main() {
+    std::vector<int> v = {1, 5, 2, 1, 5, 5, 3};
+    
+    // 1. Sort the vector to bring duplicates together
+    std::sort(v.begin(), v.end()); // v becomes {1, 1, 2, 3, 5, 5, 5}
 
-numbers.erase(it, numbers.end()); // Remove undefined elements
-for (int n : numbers) {
-    std::cout << n << " "; // Output: 1 2 3 4
+    // 2. "Remove" consecutive duplicates
+    auto last = std::unique(v.begin(), v.end()); // v becomes {1, 2, 3, 5, ?, ?, ?}
+                                                 // `last` points to the first '?'
+    // 3. Erase the unwanted elements
+    v.erase(last, v.end()); // v is now {1, 2, 3, 5}
 }
 ```
 

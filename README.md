@@ -79,6 +79,44 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
   - [Container Adaptors](./guide/containers/container_adaptors.md)
 <br><br>
 </td>
+
+<td width="33%">
+
+#### 🏛️ Object Oriented Programming (OOP)
+
+- [Classes vs Structs](./guide/oop/classes_vs_structs.md)
+- [Constructors](./guide/oop/constructors.md)
+- [Destructors](./guide/oop/destructors.md)
+- [H and CPP Files](./guide/oop/h_and_cpp_files.md)
+- [Static](./guide/oop/static.md)
+- [Friend](./guide/oop/friend.md)
+- [Nesting Classes](./guide/oop/nesting_classes.md)
+- [Object Relationships](./guide/oop/object_relationships.md)
+- Operator Overloading
+  - [Introduction](./guide/oop/operator_overloading/introduction.md)
+  - [Friend, Member and Normal Function Overloading](./guide/oop/operator_overloading/friend_vs_member_vs_normal_function_overloading.md)
+  - [In and Out operators](./guide/oop/operator_overloading/in_and_out_operators.md)
+  - [Assignment Operator](./guide/oop/operator_overloading/assignment_operator.md)
+- Inheritance
+  - [Introduction](./guide/oop/inheritance/introduction.md)
+  - [Order of Construction](./guide/oop/inheritance/order_of_construction.md)
+  - [Access Specifiers](./guide/oop/inheritance/access_specifiers.md)
+  - [Functions and Overriding Behavior](./guide/oop/inheritance/functions_and_overriding_behavior.md)
+  - [Hiding Functionality](./guide/oop/inheritance/hiding_functionality.md)
+- Virtual Functions
+  - [Introduction](./guide/oop/virtual_functions/virtual_functions.md)
+  - [Override and Final Specifier](./guide/oop/virtual_functions/override_and_final_specifier.md)
+  - [Covariant Return Types](./guide/oop/virtual_functions/covariant_return_types.md)
+  - [Destructors](./guide/oop/virtual_functions/destructors.md)
+  - [Pure Virtual](./guide/oop/virtual_functions/pure_virtual.md)
+  - [Multiple Inheritance](./guide/oop/virtual_functions/multiple_inheritance.md)
+  - [Object Slicing](./guide/oop/virtual_functions/object_slicing.md)
+<br><br>
+</td>
+
+</tr>
+<tr valign="top">
+
 <td width="33%">
 
 #### 📜 Strings
@@ -96,25 +134,7 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 - [File Streams](./guide/strings/file_streams.md)
 
 </td>
-</tr>
-<tr valign="top">
-<td width="33%">
 
-#### 🏛️ Object Oriented Programming (OOP)
-
-- [Classes vs Structs](./guide/oop/classes_vs_structs.md)
-- [Constructors](./guide/oop/constructors.md)
-- [Destructors](./guide/oop/destructors.md)
-- [H and CPP Files](./guide/oop/h_and_cpp_files.md)
-- [Static](./guide/oop/static.md)
-- [Friend](./guide/oop/friend.md)
-- [Nesting Classes](./guide/oop/nesting_classes.md)
-- [Operator Overloading](./guide/oop/operator_overloading/_index.md)
-- [Object Relationships](./guide/oop/object_relationships.md)
-- [Inheritance](./guide/oop/inheritance/_index.md)
-- [Virtual Functions](./guide/oop/virtual_functions/_index.md)
-<br><br>
-</td>
 <td width="33%">
 
 #### 🧠 Memory Management
@@ -126,6 +146,7 @@ This setup ensures a consistent and streamlined coding environment, ideal for le
 - [Shallow Copy vs Deep Copy](./guide/memory/shallow_copy_vs_deep_copy.md)
 
 </td>
+
 <td width="33%">
 
 #### 🎭 Functions
