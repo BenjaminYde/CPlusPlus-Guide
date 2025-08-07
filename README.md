@@ -16,9 +16,9 @@ Explore the `📁 examples` directory for **interactive C++** code examples, eas
 
 <table width="100%" style="border: none;">
 <tr valign="top">
-<td width="33%" style="padding-bottom: 50px;">
+<td width="33%">
 
-#### 🛠️ CMake & Tooling
+🛠️ **CMake & Tooling**
 
 - Compilation Process
   - [Compilation Process](./guide/tools/compilation/compilation_process.md)
@@ -34,13 +34,32 @@ Explore the `📁 examples` directory for **interactive C++** code examples, eas
   - [Presets](./guide/tools/cmake/cmakepresets.md)
   - Macros and Functions (todo)
   - [Best Practices](./guide/tools/cmake/best_practices.md)
-- Other
+- Tooling
   - [Common Tools](./guide/tools/clang/tooling.md)
-
+  - [H and CPP Files](./guide/oop/h_and_cpp_files.md)
 </td>
+
 <td width="33%">
 
-#### 📦 Containers
+📜 **Strings**
+
+- [String Literals](./guide/strings/string_literals.md)
+- [IO Streams](./guide/strings/io_streams.md)
+- [C Style Strings](./guide/strings/c_style_strings.md)
+- [std::string](./guide/strings/std_string.md)
+- [Character Encoding](./guide/strings/character_encoding.md)
+- [std::string_view](./guide/strings/string_view.md)
+- [String Streams](./guide/strings/string_streams.md)
+- [std::format](./guide/strings/std_format.md)
+- [printf](./guide/strings/printf.md)
+- [File IO](./guide/strings/file_io.md)
+- [File Streams](./guide/strings/file_streams.md)
+
+</td>
+
+<td width="33%">
+
+📦 **Containers**
 
 - Sequence Containers
   - [C-Style Arrays](./guide/containers/sequence/c_style_arrays.md)
@@ -64,90 +83,91 @@ Explore the `📁 examples` directory for **interactive C++** code examples, eas
 - Other
   - [std::span](./guide/containers/std_span.md)
   - [Container Adaptors](./guide/containers/container_adaptors.md)
-<br><br>
 </td>
+</tr>
+</table>
 
-<td width="33%">
+🏛️ **Object Oriented Programming OOP**
 
-#### 🏛️ Object Oriented Programming (OOP)
+<table width="100%" style="border: none;">
+<tr valign="top">
+<td width="25%" style="padding-bottom: 20px;">
+
+**General**
 
 - [Classes vs Structs](./guide/oop/classes_vs_structs.md)
 - [Constructors](./guide/oop/constructors.md)
 - [Destructors](./guide/oop/destructors.md)
-- [H and CPP Files](./guide/oop/h_and_cpp_files.md)
+- [Move and Copy](./guide/oop/move_and_copy.md)
+- [Default and Delete](./guide/oop/default_delete.md)
+- [Rule of Five](./guide/oop/rule_of_five.md)
 - [Static](./guide/oop/static.md)
 - [Friend](./guide/oop/friend.md)
 - [Nesting Classes](./guide/oop/nesting_classes.md)
 - [Object Relationships](./guide/oop/object_relationships.md)
-- Operator Overloading
-  - [Introduction](./guide/oop/operator_overloading/introduction.md)
-  - [Friend, Member and Normal Function Overloading](./guide/oop/operator_overloading/friend_vs_member_vs_normal_function_overloading.md)
-  - [In and Out operators](./guide/oop/operator_overloading/in_and_out_operators.md)
-  - [Assignment Operator](./guide/oop/operator_overloading/assignment_operator.md)
-- Inheritance
-  - [Introduction](./guide/oop/inheritance/introduction.md)
-  - [Order of Construction](./guide/oop/inheritance/order_of_construction.md)
-  - [Access Specifiers](./guide/oop/inheritance/access_specifiers.md)
-  - [Functions and Overriding Behavior](./guide/oop/inheritance/functions_and_overriding_behavior.md)
-  - [Hiding Functionality](./guide/oop/inheritance/hiding_functionality.md)
-- Virtual Functions
-  - [Introduction](./guide/oop/virtual_functions/virtual_functions.md)
-  - [Override and Final Specifier](./guide/oop/virtual_functions/override_and_final_specifier.md)
-  - [Covariant Return Types](./guide/oop/virtual_functions/covariant_return_types.md)
-  - [Destructors](./guide/oop/virtual_functions/destructors.md)
-  - [Pure Virtual](./guide/oop/virtual_functions/pure_virtual.md)
-  - [Multiple Inheritance](./guide/oop/virtual_functions/multiple_inheritance.md)
-  - [Object Slicing](./guide/oop/virtual_functions/object_slicing.md)
-<br><br>
 </td>
 
+<td width="25%" style="padding-bottom: 20px;">
+
+**Operator Overloading**
+
+- [Introduction](./guide/oop/operator_overloading/introduction.md)
+- [Friend, Member and Normal Function Overloading](./guide/oop/operator_overloading/friend_vs_member_vs_normal_function_overloading.md)
+- [In and Out operators](./guide/oop/operator_overloading/in_and_out_operators.md)
+- [Assignment Operator](./guide/oop/operator_overloading/assignment_operator.md)
+</td>
+
+<td width="25%" style="padding-bottom: 20px;">
+
+**Inheritance**
+
+- [Introduction](./guide/oop/inheritance/introduction.md)
+- [Order of Construction](./guide/oop/inheritance/order_of_construction.md)
+- [Access Specifiers](./guide/oop/inheritance/access_specifiers.md)
+- [Functions and Overriding Behavior](./guide/oop/inheritance/functions_and_overriding_behavior.md)
+- [Hiding Functionality](./guide/oop/inheritance/hiding_functionality.md)
+</td>
+
+<td width="25%" style="padding-bottom: 20px;">
+
+**Virtual Functions**
+
+- [Introduction](./guide/oop/virtual_functions/virtual_functions.md)
+- [Override and Final Specifier](./guide/oop/virtual_functions/override_and_final_specifier.md)
+- [Covariant Return Types](./guide/oop/virtual_functions/covariant_return_types.md)
+- [Destructors](./guide/oop/virtual_functions/destructors.md)
+- [Pure Virtual](./guide/oop/virtual_functions/pure_virtual.md)
+- [Multiple Inheritance](./guide/oop/virtual_functions/multiple_inheritance.md)
+- [Object Slicing](./guide/oop/virtual_functions/object_slicing.md)
+</td>
 </tr>
+</table>
+
+<table width="100%" style="border: none;">
 <tr valign="top">
-
 <td width="33%">
 
-#### 📜 Strings
-
-- [String Literals](./guide/strings/string_literals.md)
-- [IO Streams](./guide/strings/io_streams.md)
-- [C Style Strings](./guide/strings/c_style_strings.md)
-- [std::string](./guide/strings/std_string.md)
-- [Character Encoding](./guide/strings/character_encoding.md)
-- [std::string_view](./guide/strings/string_view.md)
-- [String Streams](./guide/strings/string_streams.md)
-- [std::format](./guide/strings/std_format.md)
-- [printf](./guide/strings/printf.md)
-- [File IO](./guide/strings/file_io.md)
-- [File Streams](./guide/strings/file_streams.md)
-
-</td>
-
-<td width="33%">
-
-#### 🧠 Memory Management
+🧠 **Memory Management**
 
 - [References](./guide/memory/references.md)
 - [Pointers](./guide/memory/pointers.md)
 - [Smart Pointers](./guide/memory/smart_pointers.md)
 - [How To Use Smart Pointers With Functions](./guide/memory/smart_pointers_in_functions.md)
 - [Shallow Copy vs Deep Copy](./guide/memory/shallow_copy_vs_deep_copy.md)
-
 </td>
 
 <td width="33%">
 
-#### 🎭 Functions
+🎭 **Functions**
 
 - [Function Pointers](./guide/functions/function_pointers.md)
 - [Lambdas](./guide/functions/lambdas.md)
 - [std::function](./guide/functions/std_function.md)
-
 </td>
-</tr>
-<tr valign="top">
+
 <td width="33%">
 
-#### 🔗 Typing, Casting & ConstExpr
+🔗 **Typing, Casting & ConstExpr**
 
 - [Auto](./guide/typing/auto.md)
 - Casting
@@ -157,30 +177,34 @@ Explore the `📁 examples` directory for **interactive C++** code examples, eas
   - [dynamic_cast](./guide/typing/casting/dynamic_cast.md)
 - [Using constexpr](./guide/typing/using_constexpr.md)
 - [Using constval](./guide/typing/using_constval.md)
-<br><br>
 </td>
+</tr>
+
+<tr valign="top">
 <td width="33%">
 
-#### ⚡ Concurrency
+⚡ **Concurrency**
+
 - [Introduction](./guide/concurrency/introduction.md)
 - STL Threads
   - [std::thread](./guide/concurrency/stl_threads/thread.md)
   - [std::async and std::future](./guide/concurrency/stl_threads/async_and_future.md)
 - [POSIX vs STL Threads](./guide/concurrency/posix_vs_stl_threads.md)
 </td>
+
 <td width="33%">
 
-#### 🎨 Design Patterns & Idioms
+🎨 **Design Patterns & Idioms**
+
 - Idioms
   - [RAII](./guide/design_patterns/raii.md)
   - [PIMPL](./guide/design_patterns/pimpl.md)
-
 </td>
-</tr>
-<tr valign="top">
-<td colspan="3">
 
-#### 🚧 Todo
+<td width="33%">
+
+🚧 **Todo**
+
 - Design patterns
 - Templates
 - Error handling

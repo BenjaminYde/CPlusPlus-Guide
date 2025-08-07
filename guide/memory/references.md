@@ -4,7 +4,6 @@
 
 The core idea behind references is to work directly with an existing object without creating a copy. You create a reference using the `&` symbol in the declaration. This is useful when you want to pass large objects to a function without copying them, or when you want to modify the original object within the function.
 
-
 ```c++
 void swap(int &a, int &b) {
     int temp = a;

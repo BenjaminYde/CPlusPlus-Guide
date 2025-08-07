@@ -8,28 +8,56 @@ A pointer is a variable that holds a memory address.  In C++, pointers are typed
 
 Understanding pointers requires a grasp of how memory is organized. The two primary regions are the **stack** and the **heap**:
 
-### Stack
+### The Stack (Automatic & Orderly Memory)
 
-The stack is used for **static memory allocation**. It contains local variables, function parameters, and function call information (like return addresses).
+Think of the stack like a stack of plates or a deck of cards. When you call a function, a new "plate" called a **stack frame** which is placed on top of the pile. This frame holds all the local variables and parameters for that function.
+
+This process is fast, orderly, and most importantly, **automatic**. When the function finishes, its plate is immediately taken off the top, and all the memory it used is instantly freed. This is why local variables are sometimes called "automatic variables."
 
 - **Automatic Management**: The compiler handles allocation and deallocation on the stack. Memory is allocated when a function is entered and automatically freed when the function returns. This is managed through a simple stack pointer that is incremented and decremented.
+
 - **Fast Access:** Stack access is extremely fast because memory addresses are typically known at compile time, and the LIFO (Last-In, First-Out) structure allows for straightforward allocation and deallocation.
+
 - **Limited Size**: The stack size is relatively small (compared to the heap) and fixed at compile time. The exact size can often be configured through compiler settings or operating system limits.
+
 - **Stack Overflow**: Exceeding the stack's capacity (e.g., through excessively deep recursion or very large local variables) leads to a stack overflow error, usually causing program termination.
 
-### Heap
+```c++
+void myFunction() {
+    int x = 10; // 'x' lives on the stack, in myFunction's "plate".
+    // ... do stuff with x ...
+} // When myFunction ends, its plate is removed. 'x' is automatically destroyed. No cleanup needed.
+```
 
-The heap is the region of memory used for **dynamic memory allocation**. This is where you have explicit control over memory allocation and deallocation during runtime.
+### Heap (Manual & Flexible Memory)
 
-- **Dynamic Allocation**: Memory is allocated on demand using operators like `new` (or `malloc` in C).
-- **Manual Deallocation**: Unlike the stack, the heap requires manual deallocation using `delete` (or `free` in C). Failure to deallocate leads to memory leaks.
-- **Larger Size**: The heap is typically much larger than the stack, limited primarily by available system RAM and virtual memory.
-- **Slower Access**: Heap allocation and deallocation are slower than stack operations. The memory manager needs to find suitable free blocks, and fragmentation can occur over time.
-- **Fragmentation**: As memory is repeatedly allocated and deallocated, the heap can become fragmented, meaning free space is broken into small, non-contiguous chunks. This can make it difficult to allocate large blocks of memory even if sufficient total free space exists.
+The heap is a large, less-structured pool of memory available for your program to use when you need data to live longer than a single function call or when its size isn't known at compile time.
+
+Think of it as a large, open warehouse where you can request a storage space of any size. You request space using the new keyword, and you get back a pointer (an address) to your reserved spot.
+
+- **Manual Control**: Unlike the stack, memory on the free store is not managed automatically. You are responsible for both allocation (`new`) and deallocation (`delete`).
+
+- **Forgetting to `delete` causes Memory Leaks**: If you request memory with ne`w and forget to release it with `delete`, that memory becomes unusable for the rest of the program's duration. This is a **memory leak**.
+
+- **Larger Size**: The free store is typically much larger than the stack, limited only by the available system memory.
+
+- **Slower Access**: Allocation and deallocation are slower. The system has to search for a free block of the right size, which takes more time than simply moving the stack pointer.
+
+- **Fragmentation**: Over time, as you allocate and deallocate blocks of different sizes, the free space in the "warehouse" can become broken up into small, non-contiguous chunks. This is called fragmentation, and it can make it difficult to find a large enough single block for a new allocation, even if there's enough total free space
 
 The heap is used for dynamic memory allocation, and allows you to allocate memory explicitly during runtime. Unlike the stack, the heap does not automatically deallocate memory—you have to do it manually. If you forget to deallocate memory when you're done with it, it can lead to memory leaks. The heap is larger than the stack, but allocating and deallocating memory on the heap is slower than on the stack.
 
-![Img](./static/stack_vs_heap_1.png)
+```c++
+void createLeakyData() {
+    // Request memory for 50 ints on the free store.
+    int* myData = new int[50];
+    // ... do stuff with myData ...
+
+} // myData (the pointer on the stack) is destroyed, but the memory
+  // it pointed to on the free store is NOT released! It's now leaked.
+  // You should always use the delete keyword!
+```
+
 ![Img](./static/stack_vs_heap_2.png)
 
 ## Why and when to use pointers?
