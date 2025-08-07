@@ -1,29 +1,16 @@
-# The Modern C++ Guide 📚
-
-<table width="100%" style="border: none;">
-<td width="60%" valign="top">
+# C++ Guide 📚
 
 ### 👋 Welcome!
 
-This repository is a practical, **to-the-point guide** for developers looking to master modern C++. Whether you're a beginner taking your first steps or an experienced programmer leveling up, you'll find extensive documentation, best practices and runnable code.
+This repository is meant to be a **guide / quick reference** for C++ developers where I try to get to the point so you can spend more time programming. This guide is **Markdown**, so it is easily opened using **Visual Studio Code** or **Github**. It contains extensive documentation, code examples and best practices.
 
-The core philosophy is simple: **learn by doing**. I get straight to the point so you can spend less time reading and more time programming.
+### 📝 A Note on Reading This Guide
 
-This guide is **Markdown**, so it is easily opened using **Visual Studio Code** or **Github**. It contains extensive documentation, code examples and best practices to help you become a proficient C++ programmer.
-<br><br>
-</td>
-
-<td width="40%" valign="top">
+Before you dive in, it's important to understand that this guide is **structured by topic**, not by difficulty. There is **no prescribed "beginner to advanced" path**. Feel free to jump to any section that is relevant to your needs. A developer needing to understand `std::vector` can go straight there, while another might need to brush up on "RAII" or "CMake Presets."
 
 ### 🚀 Execute Code Examples 
 
-Explore the `📁 examples` directory for **interactive C++** code examples, easily executable inside a **Docker DevContainer** within **Visual Studio Code**. 
-
-This setup ensures a consistent and streamlined coding environment, ideal for learning and experimentation.
-
-</td>
-</tr>
-</table>
+Explore the `📁 examples` directory for **interactive C++** code examples, easily executable inside a **Docker DevContainer** within **Visual Studio Code**.  This setup ensures a consistent and streamlined coding environment, ideal for learning and experimentation.
 
 ## 🗂️ Table of Contents 
 
