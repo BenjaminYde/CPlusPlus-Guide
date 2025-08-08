@@ -1,4 +1,8 @@
-## Composition
+# Object Relationships
+
+In object-oriented programming, classes and objects don't exist in isolation. They interact and relate to each other to form a cohesive system.
+
+## Composition: The "Owns-A" Relationship
 
 In real-life, complex objects are often built from smaller, simpler objects. For example, a car is built using a metal frame, an engine, some tires, a transmission, a steering wheel, and a large number of other parts. A personal computer is built from a CPU, a motherboard, some memory, etc… Even you are built from smaller parts: you have a head, a body, some legs, arms, and so on. This process of building complex objects from simpler ones is called **object composition**.
 
@@ -29,7 +33,8 @@ public:
     // Human class code
 };
 ```
-## Aggregation
+
+## Aggregation: The "Uses-A" Peer Relationship
 
 Like a composition, an aggregation is still a part-whole relationship, where the parts are contained within the whole, and it is a unidirectional relationship. However, unlike a composition, parts can belong to more than one object at a time, and the whole object is not responsible for the existence and lifespan of the parts. When an aggregation is created, the aggregation is not responsible for creating the parts. When an aggregation is destroyed, the aggregation is not responsible for destroying the parts.
 
@@ -59,7 +64,7 @@ public:
 };
 ```
 
-## Association
+## Association: The "Uses-A" Peer Relationship
 
 Unlike a composition or aggregation, where the part is a part of the whole object, in an association, the associated object is otherwise unrelated to the object. Just like an aggregation, the associated object can belong to multiple objects simultaneously, and isn’t managed by those objects. However, unlike an aggregation, where the relationship is always unidirectional, in an association, the relationship may be unidirectional or bidirectional (where the two objects are aware of each other).
 
@@ -99,7 +104,7 @@ public:
 };
 ```
 
-## Dependencies
+## Dependencies: The "Uses-A" Transient Relationship
 
 A **dependency** occurs when one object invokes another object’s functionality in order to accomplish some specific task. This is a weaker relationship than an association, but still, any change to object being depended upon may break functionality in the (dependent) caller. A dependency is always a unidirectional relationship.
 
